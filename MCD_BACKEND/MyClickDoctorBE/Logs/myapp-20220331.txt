@@ -1,0 +1,539 @@
+2022-03-31T14:45:33.9325352+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2022-03-31T14:45:33.9505358+05:30  [INF] Quartz Scheduler created (389d80b0)
+2022-03-31T14:45:33.9545232+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2022-03-31T14:45:33.9570564+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2022-03-31T14:45:33.9924624+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2022-03-31T14:45:34.0081158+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2022-03-31T14:45:34.0099759+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2022-03-31T14:45:34.1488200+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2022-03-31T14:45:34.1649847+05:30 0HMGIUS1DJ47M:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2022-03-31T14:45:34.1649847+05:30 0HMGIUS1DJ47L:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2022-03-31T14:45:34.2015295+05:30 0HMGIUS1DJ47L:00000001 [INF] Request finished in 38.2534ms 200  (791a596a)
+2022-03-31T14:45:34.7888888+05:30 0HMGIUS1DJ47M:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2022-03-31T14:45:34.7999111+05:30 0HMGIUS1DJ47M:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-03-31T14:45:34.8166574+05:30 0HMGIUS1DJ47M:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 12.3637ms. (50a9e262)
+2022-03-31T14:45:34.8291309+05:30 0HMGIUS1DJ47M:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2022-03-31T14:45:34.8426482+05:30 0HMGIUS1DJ47M:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 44.5591ms (afa2e885)
+2022-03-31T14:45:34.9008587+05:30 0HMGIUS1DJ47M:00000001 [INF] Request finished in 717.1246ms 200 text/plain; charset=utf-8 (791a596a)
+2022-03-31T14:45:34.9976310+05:30 0HMGIUS1DJ47L:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/favicon.ico   (ca22a1cb)
+2022-03-31T14:45:35.0490745+05:30 0HMGIUS1DJ47L:00000002 [INF] Request finished in 45.5768ms 404  (791a596a)
+2022-03-31T14:56:31.9686020+05:30 0HMGIUS1DJ47N:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Email/GetDoctorToSendEmail   (ca22a1cb)
+2022-03-31T14:56:32.0141435+05:30 0HMGIUS1DJ47N:00000001 [INF] Route matched with "{action = \"GetDoctorToSendEmail\", controller = \"Email\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDoctorToSendEmail()" on controller "MyClickDoctorBE.Controllers.EmailController" ("MyClickDoctorBE"). (122b2fdf)
+2022-03-31T14:56:32.2172851+05:30 0HMGIUS1DJ47N:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.EmailController.GetDoctorToSendEmail (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-03-31T14:56:53.2402103+05:30 0HMGIUS1DJ47N:00000001 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2022-03-31T14:56:53.2836519+05:30 0HMGIUS1DJ47N:00000001 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-31T14:56:53.3755409+05:30 0HMGIUS1DJ47N:00000001 [WRN] The LINQ expression '"where ((([a].UserType == 2) AndAlso ([a].Unscubscribe != 1)) AndAlso (ToDateTime(Convert([a].EmailUpdatedAt, Object)).Date != DateTime.UtcNow.Date))"' could not be translated and will be evaluated locally. (011792c6)
+2022-03-31T14:56:54.4789755+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("171"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[BussinessStatus], [a].[CreatedAt], [a].[DeletedAt], [a].[DeletedBy], [a].[Email], [a].[EmailAuth], [a].[EmailOTP], [a].[EmailUpdatedAt], [a].[Isemail], [a].[LastMeeting], [a].[Lastlogin], [a].[MobileOTP], [a].[PhoneNo], [a].[SMSAuth], [a].[Status], [a].[Token], [a].[Unscubscribe], [a].[UpdatedAt], [a].[UpdatedBy], [a].[UserPassword], [a].[UserType]
+FROM [Users] AS [a]
+WHERE [a].[Status] = 1" (0723d8ff)
+2022-03-31T14:57:45.2927529+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("159"ms) [Parameters=["@__item_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE [a].[UserId] = @__item_Id_0" (0723d8ff)
+2022-03-31T14:57:47.7521915+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("159"ms) [Parameters=["@__doctor_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[DocId], [a].[Docavailable], [a].[DoctorType], [a].[Duration], [a].[FromTime], [a].[Isemail], [a].[MaxCount], [a].[Nurseavailable], [a].[Patientavailable], [a].[Pharmaavailable], [a].[SlotType], [a].[Status], [a].[Subject], [a].[ToTime], [a].[Type]
+FROM [DoctorAvailibiltyforAppointment] AS [a]
+WHERE ((([a].[Status] = 0) AND ([a].[ToTime] > GETUTCDATE())) AND ([a].[DocId] <> @__doctor_Id_0)) AND ([a].[SlotType] = N'other')
+ORDER BY [a].[ToTime] DESC" (0723d8ff)
+2022-03-31T14:57:50.0942045+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("158"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:57:50.8185307+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("157"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:57:51.3301434+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("157"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:57:51.8061095+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("157"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:57:52.2824180+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("157"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:57:52.7650548+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("157"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:57:54.2760518+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("157"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:57:54.7638777+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("157"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:58:05.1655056+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("157"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Users] SET [EmailUpdatedAt] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-03-31T14:58:05.4877491+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("158"ms) [Parameters=["@__item_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE [a].[UserId] = @__item_Id_0" (0723d8ff)
+2022-03-31T14:58:05.6521767+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("159"ms) [Parameters=["@__doctor_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[DocId], [a].[Docavailable], [a].[DoctorType], [a].[Duration], [a].[FromTime], [a].[Isemail], [a].[MaxCount], [a].[Nurseavailable], [a].[Patientavailable], [a].[Pharmaavailable], [a].[SlotType], [a].[Status], [a].[Subject], [a].[ToTime], [a].[Type]
+FROM [DoctorAvailibiltyforAppointment] AS [a]
+WHERE ((([a].[Status] = 0) AND ([a].[ToTime] > GETUTCDATE())) AND ([a].[DocId] <> @__doctor_Id_0)) AND ([a].[SlotType] = N'other')
+ORDER BY [a].[ToTime] DESC" (0723d8ff)
+2022-03-31T14:58:05.8154652+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("159"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:58:06.2914838+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("157"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:58:06.7698696+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("159"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:58:07.2597993+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("158"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:58:07.7420843+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("158"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:58:08.2222050+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("158"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:58:09.0456079+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("159"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:58:09.5226422+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("157"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:58:11.2476746+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("158"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Users] SET [EmailUpdatedAt] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-03-31T14:58:11.5707099+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("160"ms) [Parameters=["@__item_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE [a].[UserId] = @__item_Id_0" (0723d8ff)
+2022-03-31T14:58:11.7325622+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("159"ms) [Parameters=["@__doctor_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[DocId], [a].[Docavailable], [a].[DoctorType], [a].[Duration], [a].[FromTime], [a].[Isemail], [a].[MaxCount], [a].[Nurseavailable], [a].[Patientavailable], [a].[Pharmaavailable], [a].[SlotType], [a].[Status], [a].[Subject], [a].[ToTime], [a].[Type]
+FROM [DoctorAvailibiltyforAppointment] AS [a]
+WHERE ((([a].[Status] = 0) AND ([a].[ToTime] > GETUTCDATE())) AND ([a].[DocId] <> @__doctor_Id_0)) AND ([a].[SlotType] = N'other')
+ORDER BY [a].[ToTime] DESC" (0723d8ff)
+2022-03-31T14:58:11.8935269+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("159"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:58:12.3868285+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("158"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:58:12.8658452+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("158"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:58:13.3471370+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("157"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:58:13.8275967+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("157"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:58:14.3039729+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("157"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:58:15.1253404+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("161"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:58:15.6103238+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("162"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:58:17.3336567+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("157"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Users] SET [EmailUpdatedAt] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-03-31T14:58:17.6543439+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("158"ms) [Parameters=["@__item_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE [a].[UserId] = @__item_Id_0" (0723d8ff)
+2022-03-31T14:58:17.8141944+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("157"ms) [Parameters=["@__doctor_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[DocId], [a].[Docavailable], [a].[DoctorType], [a].[Duration], [a].[FromTime], [a].[Isemail], [a].[MaxCount], [a].[Nurseavailable], [a].[Patientavailable], [a].[Pharmaavailable], [a].[SlotType], [a].[Status], [a].[Subject], [a].[ToTime], [a].[Type]
+FROM [DoctorAvailibiltyforAppointment] AS [a]
+WHERE ((([a].[Status] = 0) AND ([a].[ToTime] > GETUTCDATE())) AND ([a].[DocId] <> @__doctor_Id_0)) AND ([a].[SlotType] = N'other')
+ORDER BY [a].[ToTime] DESC" (0723d8ff)
+2022-03-31T14:58:17.9762765+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("158"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:58:18.4609528+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("157"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:58:18.9438242+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("158"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:58:19.4216575+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("157"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:58:19.9052094+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("165"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:58:20.3854897+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("159"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:58:21.1939784+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("158"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:58:21.6727816+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("157"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:58:23.3736961+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("158"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Users] SET [EmailUpdatedAt] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-03-31T14:58:23.6924908+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("158"ms) [Parameters=["@__item_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE [a].[UserId] = @__item_Id_0" (0723d8ff)
+2022-03-31T14:58:23.8554382+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("157"ms) [Parameters=["@__doctor_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[DocId], [a].[Docavailable], [a].[DoctorType], [a].[Duration], [a].[FromTime], [a].[Isemail], [a].[MaxCount], [a].[Nurseavailable], [a].[Patientavailable], [a].[Pharmaavailable], [a].[SlotType], [a].[Status], [a].[Subject], [a].[ToTime], [a].[Type]
+FROM [DoctorAvailibiltyforAppointment] AS [a]
+WHERE ((([a].[Status] = 0) AND ([a].[ToTime] > GETUTCDATE())) AND ([a].[DocId] <> @__doctor_Id_0)) AND ([a].[SlotType] = N'other')
+ORDER BY [a].[ToTime] DESC" (0723d8ff)
+2022-03-31T14:58:24.0218774+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("160"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:58:24.5055096+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("161"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:58:24.9850408+05:30 0HMGIUS1DJ47N:00000001 [INF] Executed DbCommand ("157"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:58:56.8473662+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2022-03-31T14:58:56.9180726+05:30  [INF] Quartz Scheduler created (389d80b0)
+2022-03-31T14:58:56.9207919+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2022-03-31T14:58:56.9401764+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2022-03-31T14:58:56.9470820+05:30 0HMGIV3GKL9BA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2022-03-31T14:58:56.9474080+05:30 0HMGIV3GKL9BB:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2022-03-31T14:58:56.9524972+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2022-03-31T14:58:56.9571788+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2022-03-31T14:58:56.9588402+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2022-03-31T14:58:56.9856647+05:30 0HMGIV3GKL9BB:00000001 [INF] Request finished in 46.5988ms 200  (791a596a)
+2022-03-31T14:58:57.0816601+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2022-03-31T14:58:57.1567811+05:30 0HMGIV3GKL9BA:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2022-03-31T14:58:57.1687084+05:30 0HMGIV3GKL9BA:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-03-31T14:58:57.1804457+05:30 0HMGIV3GKL9BA:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 7.5097ms. (50a9e262)
+2022-03-31T14:58:57.1894647+05:30 0HMGIV3GKL9BA:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2022-03-31T14:58:57.1989677+05:30 0HMGIV3GKL9BA:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 36.0989ms (afa2e885)
+2022-03-31T14:58:57.2240168+05:30 0HMGIV3GKL9BA:00000001 [INF] Request finished in 270.7723ms 200 text/plain; charset=utf-8 (791a596a)
+2022-03-31T14:59:02.3665341+05:30 0HMGIV3GKL9BB:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Email/GetAppointmentFifteenMinEmail   (ca22a1cb)
+2022-03-31T14:59:02.3768171+05:30 0HMGIV3GKL9BB:00000002 [INF] Route matched with "{action = \"GetAppointmentFifteenMinEmail\", controller = \"Email\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAppointmentFifteenMinEmail()" on controller "MyClickDoctorBE.Controllers.EmailController" ("MyClickDoctorBE"). (122b2fdf)
+2022-03-31T14:59:02.4926200+05:30 0HMGIV3GKL9BB:00000002 [INF] Executing action method "MyClickDoctorBE.Controllers.EmailController.GetAppointmentFifteenMinEmail (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-03-31T14:59:02.8466733+05:30 0HMGIV3GKL9BB:00000002 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2022-03-31T14:59:02.8836909+05:30 0HMGIV3GKL9BB:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-31T14:59:02.9050627+05:30 0HMGIV3GKL9BB:00000002 [WRN] Query: '"(from PharmaMaxConsultationCount <generated>_1 in DbSet<PharmaMaxConsultationCount> select [<generat..."' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results. (6af4db4b)
+2022-03-31T14:59:03.9526609+05:30 0HMGIV3GKL9BB:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[CallCount], [p].[ConsulationCount], [p].[Fifteenmin], [p].[Onehour], [p].[RefCount], [p].[Twentyfourhour]
+FROM [PharmaMaxConsultationCount] AS [p]" (0723d8ff)
+2022-03-31T14:59:04.1688675+05:30 0HMGIV3GKL9BB:00000002 [INF] Executed DbCommand ("157"ms) [Parameters=["@__todayDate_Date_0='?' (DbType = DateTime)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Appoinmentcode], [a].[AppointmentTitle], [a].[BeforeCall], [a].[BookingDate], [a].[CallQualityFeedbackDoctor], [a].[CallQualityFeedbackPatient], [a].[CancelBy], [a].[ColorCode], [a].[CompanyId], [a].[Description], [a].[docId], [a].[DocSlotId], [a].[DoctorAdviseAfterConsultation], [a].[DoctorCancelStatus], [a].[DoctorConsultationId], [a].[DoctorId], [a].[DoctorPopup], [a].[DoctortoPopup], [a].[Duration], [a].[EndCall], [a].[EndDate], [a].[IsActive], [a].[IsDoctorShowedUp], [a].[IsFifteenEmail], [a].[IsNextConsultationAdvise], [a].[IsdayEmail], [a].[IshourEmail], [a].[LastVisitedDate], [a].[MyRole], [a].[NextConsultationDate], [a].[NurseFeedbackAboutDoctor], [a].[NurseId], [a].[NursePopup], [a].[NurseSlotId], [a].[NurseStartDate], [a].[NurseSuggestionStatus], [a].[PatientAamnesticData], [a].[PatientId], [a].[PatientPopup], [a].[PharmaPopup], [a].[PharmaRepId], [a].[RatingGivenByPatient], [a].[ShortSummaryWrittenByPatient], [a].[StartDate], [a].[TimeZone], [a].[UserRole], [a].[VideoCallKey]
+FROM [Appoinments] AS [a]
+WHERE (CONVERT(date, [a].[StartDate]) = @__todayDate_Date_0) AND (([a].[IsFifteenEmail] <> 1) OR [a].[IsFifteenEmail] IS NULL)" (0723d8ff)
+2022-03-31T14:59:04.2090449+05:30 0HMGIV3GKL9BB:00000002 [INF] Executed action method "MyClickDoctorBE.Controllers.EmailController.GetAppointmentFifteenMinEmail (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1714.3011ms. (50a9e262)
+2022-03-31T14:59:04.2106113+05:30 0HMGIV3GKL9BB:00000002 [INF] Executing ObjectResult, writing value of type '"System.Int32"'. (8a1b66c8)
+2022-03-31T14:59:04.2489758+05:30 0HMGIV3GKL9BB:00000002 [INF] Executed action "MyClickDoctorBE.Controllers.EmailController.GetAppointmentFifteenMinEmail (MyClickDoctorBE)" in 1870.4658ms (afa2e885)
+2022-03-31T14:59:04.2584402+05:30 0HMGIV3GKL9BB:00000002 [INF] Request finished in 1885.2383ms 200 application/json; charset=utf-8 (791a596a)
+2022-03-31T14:59:30.5337293+05:30 0HMGIV3GKL9BA:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Email/GetDoctorToSendEmail   (ca22a1cb)
+2022-03-31T14:59:30.5380562+05:30 0HMGIV3GKL9BA:00000002 [INF] Route matched with "{action = \"GetDoctorToSendEmail\", controller = \"Email\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDoctorToSendEmail()" on controller "MyClickDoctorBE.Controllers.EmailController" ("MyClickDoctorBE"). (122b2fdf)
+2022-03-31T14:59:30.5434557+05:30 0HMGIV3GKL9BA:00000002 [INF] Executing action method "MyClickDoctorBE.Controllers.EmailController.GetDoctorToSendEmail (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-03-31T14:59:33.7529813+05:30 0HMGIV3GKL9BA:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-31T14:59:33.7777202+05:30 0HMGIV3GKL9BA:00000002 [WRN] The LINQ expression '"where ((([a].UserType == 2) AndAlso ([a].Unscubscribe != 1)) AndAlso (ToDateTime(Convert([a].EmailUpdatedAt, Object)).Date != DateTime.UtcNow.Date))"' could not be translated and will be evaluated locally. (011792c6)
+2022-03-31T14:59:33.9436392+05:30 0HMGIV3GKL9BA:00000002 [INF] Executed DbCommand ("158"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[BussinessStatus], [a].[CreatedAt], [a].[DeletedAt], [a].[DeletedBy], [a].[Email], [a].[EmailAuth], [a].[EmailOTP], [a].[EmailUpdatedAt], [a].[Isemail], [a].[LastMeeting], [a].[Lastlogin], [a].[MobileOTP], [a].[PhoneNo], [a].[SMSAuth], [a].[Status], [a].[Token], [a].[Unscubscribe], [a].[UpdatedAt], [a].[UpdatedBy], [a].[UserPassword], [a].[UserType]
+FROM [Users] AS [a]
+WHERE [a].[Status] = 1" (0723d8ff)
+2022-03-31T14:59:36.5617626+05:30 0HMGIV3GKL9BA:00000002 [INF] Executed DbCommand ("158"ms) [Parameters=["@__item_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE [a].[UserId] = @__item_Id_0" (0723d8ff)
+2022-03-31T14:59:38.0862380+05:30 0HMGIV3GKL9BA:00000002 [INF] Executed DbCommand ("156"ms) [Parameters=["@__doctor_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[DocId], [a].[Docavailable], [a].[DoctorType], [a].[Duration], [a].[FromTime], [a].[Isemail], [a].[MaxCount], [a].[Nurseavailable], [a].[Patientavailable], [a].[Pharmaavailable], [a].[SlotType], [a].[Status], [a].[Subject], [a].[ToTime], [a].[Type]
+FROM [DoctorAvailibiltyforAppointment] AS [a]
+WHERE ((([a].[Status] = 0) AND ([a].[ToTime] > GETUTCDATE())) AND ([a].[DocId] <> @__doctor_Id_0)) AND ([a].[SlotType] = N'other')
+ORDER BY [a].[ToTime] DESC" (0723d8ff)
+2022-03-31T14:59:39.4825195+05:30 0HMGIV3GKL9BA:00000002 [INF] Executed DbCommand ("156"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:59:40.2159241+05:30 0HMGIV3GKL9BA:00000002 [INF] Executed DbCommand ("155"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:59:40.7240939+05:30 0HMGIV3GKL9BA:00000002 [INF] Executed DbCommand ("156"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:59:41.1989255+05:30 0HMGIV3GKL9BA:00000002 [INF] Executed DbCommand ("156"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:59:41.6728280+05:30 0HMGIV3GKL9BA:00000002 [INF] Executed DbCommand ("156"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:59:42.1513694+05:30 0HMGIV3GKL9BA:00000002 [INF] Executed DbCommand ("155"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:59:43.5814764+05:30 0HMGIV3GKL9BA:00000002 [INF] Executed DbCommand ("156"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:59:44.0551235+05:30 0HMGIV3GKL9BA:00000002 [INF] Executed DbCommand ("155"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:59:50.4718735+05:30 0HMGIV3GKL9BA:00000002 [INF] Executed DbCommand ("156"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Users] SET [EmailUpdatedAt] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-03-31T14:59:50.7910652+05:30 0HMGIV3GKL9BA:00000002 [INF] Executed DbCommand ("157"ms) [Parameters=["@__item_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE [a].[UserId] = @__item_Id_0" (0723d8ff)
+2022-03-31T14:59:50.9496800+05:30 0HMGIV3GKL9BA:00000002 [INF] Executed DbCommand ("155"ms) [Parameters=["@__doctor_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[DocId], [a].[Docavailable], [a].[DoctorType], [a].[Duration], [a].[FromTime], [a].[Isemail], [a].[MaxCount], [a].[Nurseavailable], [a].[Patientavailable], [a].[Pharmaavailable], [a].[SlotType], [a].[Status], [a].[Subject], [a].[ToTime], [a].[Type]
+FROM [DoctorAvailibiltyforAppointment] AS [a]
+WHERE ((([a].[Status] = 0) AND ([a].[ToTime] > GETUTCDATE())) AND ([a].[DocId] <> @__doctor_Id_0)) AND ([a].[SlotType] = N'other')
+ORDER BY [a].[ToTime] DESC" (0723d8ff)
+2022-03-31T14:59:51.1079110+05:30 0HMGIV3GKL9BA:00000002 [INF] Executed DbCommand ("156"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:59:51.5780892+05:30 0HMGIV3GKL9BA:00000002 [INF] Executed DbCommand ("155"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T14:59:52.0565991+05:30 0HMGIV3GKL9BA:00000002 [INF] Executed DbCommand ("156"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T14:59:52.5324515+05:30 0HMGIV3GKL9BA:00000002 [INF] Executed DbCommand ("156"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T15:03:49.5477059+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2022-03-31T15:03:49.5749866+05:30 0HMGIV67SCGEM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2022-03-31T15:03:49.5749865+05:30 0HMGIV67SCGEN:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2022-03-31T15:03:49.6027458+05:30  [INF] Quartz Scheduler created (389d80b0)
+2022-03-31T15:03:49.6291949+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2022-03-31T15:03:49.6404939+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2022-03-31T15:03:49.6454245+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2022-03-31T15:03:49.6455438+05:30 0HMGIV67SCGEN:00000001 [INF] Request finished in 70.2898ms 200  (791a596a)
+2022-03-31T15:03:49.6477404+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2022-03-31T15:03:49.6493270+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2022-03-31T15:03:49.7567103+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2022-03-31T15:03:49.8126917+05:30 0HMGIV67SCGEM:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2022-03-31T15:03:49.8219541+05:30 0HMGIV67SCGEM:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-03-31T15:03:49.8323833+05:30 0HMGIV67SCGEM:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 6.5558ms. (50a9e262)
+2022-03-31T15:03:49.8394192+05:30 0HMGIV67SCGEM:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2022-03-31T15:03:49.8468784+05:30 0HMGIV67SCGEM:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 30.2835ms (afa2e885)
+2022-03-31T15:03:49.8823595+05:30 0HMGIV67SCGEM:00000001 [INF] Request finished in 290.6722ms 200 text/plain; charset=utf-8 (791a596a)
+2022-03-31T15:04:27.3102814+05:30 0HMGIV67SCGEN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Email/GetDoctorToSendEmail   (ca22a1cb)
+2022-03-31T15:04:27.3169159+05:30 0HMGIV67SCGEN:00000002 [INF] Route matched with "{action = \"GetDoctorToSendEmail\", controller = \"Email\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDoctorToSendEmail()" on controller "MyClickDoctorBE.Controllers.EmailController" ("MyClickDoctorBE"). (122b2fdf)
+2022-03-31T15:04:27.4364943+05:30 0HMGIV67SCGEN:00000002 [INF] Executing action method "MyClickDoctorBE.Controllers.EmailController.GetDoctorToSendEmail (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-03-31T15:04:31.0571983+05:30 0HMGIV67SCGEN:00000002 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2022-03-31T15:04:31.0958136+05:30 0HMGIV67SCGEN:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-31T15:04:31.1683687+05:30 0HMGIV67SCGEN:00000002 [WRN] The LINQ expression '"where ((([a].UserType == 2) AndAlso ([a].Unscubscribe != 1)) AndAlso (ToDateTime(Convert([a].EmailUpdatedAt, Object)).Date != DateTime.UtcNow.Date))"' could not be translated and will be evaluated locally. (011792c6)
+2022-03-31T15:04:32.2318685+05:30 0HMGIV67SCGEN:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[BussinessStatus], [a].[CreatedAt], [a].[DeletedAt], [a].[DeletedBy], [a].[Email], [a].[EmailAuth], [a].[EmailOTP], [a].[EmailUpdatedAt], [a].[Isemail], [a].[LastMeeting], [a].[Lastlogin], [a].[MobileOTP], [a].[PhoneNo], [a].[SMSAuth], [a].[Status], [a].[Token], [a].[Unscubscribe], [a].[UpdatedAt], [a].[UpdatedBy], [a].[UserPassword], [a].[UserType]
+FROM [Users] AS [a]
+WHERE [a].[Status] = 1" (0723d8ff)
+2022-03-31T15:04:35.1775042+05:30 0HMGIV67SCGEN:00000002 [INF] Executed DbCommand ("158"ms) [Parameters=["@__item_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE [a].[UserId] = @__item_Id_0" (0723d8ff)
+2022-03-31T15:04:38.5702882+05:30 0HMGIV67SCGEN:00000002 [INF] Executed DbCommand ("156"ms) [Parameters=["@__doctor_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[DocId], [a].[Docavailable], [a].[DoctorType], [a].[Duration], [a].[FromTime], [a].[Isemail], [a].[MaxCount], [a].[Nurseavailable], [a].[Patientavailable], [a].[Pharmaavailable], [a].[SlotType], [a].[Status], [a].[Subject], [a].[ToTime], [a].[Type]
+FROM [DoctorAvailibiltyforAppointment] AS [a]
+WHERE ((([a].[Status] = 0) AND ([a].[ToTime] > GETUTCDATE())) AND ([a].[DocId] <> @__doctor_Id_0)) AND ([a].[SlotType] = N'other')
+ORDER BY [a].[ToTime] DESC" (0723d8ff)
+2022-03-31T15:04:39.7424452+05:30 0HMGIV67SCGEN:00000002 [INF] Executed DbCommand ("158"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T15:04:40.4301714+05:30 0HMGIV67SCGEN:00000002 [INF] Executed DbCommand ("156"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T15:04:40.9493631+05:30 0HMGIV67SCGEN:00000002 [INF] Executed DbCommand ("156"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T15:04:41.4265098+05:30 0HMGIV67SCGEN:00000002 [INF] Executed DbCommand ("156"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T15:27:02.5804828+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2022-03-31T15:27:02.5905152+05:30  [INF] Quartz Scheduler created (389d80b0)
+2022-03-31T15:27:02.5980083+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2022-03-31T15:27:02.6008999+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2022-03-31T15:27:02.6079559+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2022-03-31T15:27:02.6103538+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2022-03-31T15:27:02.6122668+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2022-03-31T15:27:02.6892568+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2022-03-31T15:27:02.8037955+05:30 0HMGIVJ73JCQD:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2022-03-31T15:27:02.8037954+05:30 0HMGIVJ73JCQC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2022-03-31T15:27:02.8343149+05:30 0HMGIVJ73JCQD:00000001 [INF] Request finished in 30.4342ms 200  (791a596a)
+2022-03-31T15:27:03.0586500+05:30 0HMGIVJ73JCQC:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2022-03-31T15:27:03.0695484+05:30 0HMGIVJ73JCQC:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-03-31T15:27:03.0823010+05:30 0HMGIVJ73JCQC:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 7.5499ms. (50a9e262)
+2022-03-31T15:27:03.0898659+05:30 0HMGIVJ73JCQC:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2022-03-31T15:27:03.1004524+05:30 0HMGIVJ73JCQC:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 35.4001ms (afa2e885)
+2022-03-31T15:27:03.1243971+05:30 0HMGIVJ73JCQC:00000001 [INF] Request finished in 309.2941ms 200 text/plain; charset=utf-8 (791a596a)
+2022-03-31T15:27:25.2754198+05:30 0HMGIVJ73JCQD:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Email/GetDoctorToSendEmail   (ca22a1cb)
+2022-03-31T15:27:25.2806941+05:30 0HMGIVJ73JCQD:00000002 [INF] Route matched with "{action = \"GetDoctorToSendEmail\", controller = \"Email\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDoctorToSendEmail()" on controller "MyClickDoctorBE.Controllers.EmailController" ("MyClickDoctorBE"). (122b2fdf)
+2022-03-31T15:27:25.3933075+05:30 0HMGIVJ73JCQD:00000002 [INF] Executing action method "MyClickDoctorBE.Controllers.EmailController.GetDoctorToSendEmail (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-03-31T15:27:28.8091094+05:30 0HMGIVJ73JCQD:00000002 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2022-03-31T15:27:28.8452455+05:30 0HMGIVJ73JCQD:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-31T15:27:28.9466551+05:30 0HMGIVJ73JCQD:00000002 [WRN] The LINQ expression '"where ((([a].UserType == 2) AndAlso ([a].Unscubscribe != 1)) AndAlso (ToDateTime(Convert([a].EmailUpdatedAt, Object)).Date != DateTime.UtcNow.Date))"' could not be translated and will be evaluated locally. (011792c6)
+2022-03-31T15:27:30.0264333+05:30 0HMGIVJ73JCQD:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[BussinessStatus], [a].[CreatedAt], [a].[DeletedAt], [a].[DeletedBy], [a].[Email], [a].[EmailAuth], [a].[EmailOTP], [a].[EmailUpdatedAt], [a].[Isemail], [a].[LastMeeting], [a].[Lastlogin], [a].[MobileOTP], [a].[PhoneNo], [a].[SMSAuth], [a].[Status], [a].[Token], [a].[Unscubscribe], [a].[UpdatedAt], [a].[UpdatedBy], [a].[UserPassword], [a].[UserType]
+FROM [Users] AS [a]
+WHERE [a].[Status] = 1" (0723d8ff)
+2022-03-31T15:27:33.4901726+05:30 0HMGIVJ73JCQD:00000002 [INF] Executed DbCommand ("160"ms) [Parameters=["@__item_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE [a].[UserId] = @__item_Id_0" (0723d8ff)
+2022-03-31T15:27:36.0028182+05:30 0HMGIVJ73JCQD:00000002 [INF] Executed DbCommand ("158"ms) [Parameters=["@__doctor_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[DocId], [a].[Docavailable], [a].[DoctorType], [a].[Duration], [a].[FromTime], [a].[Isemail], [a].[MaxCount], [a].[Nurseavailable], [a].[Patientavailable], [a].[Pharmaavailable], [a].[SlotType], [a].[Status], [a].[Subject], [a].[ToTime], [a].[Type]
+FROM [DoctorAvailibiltyforAppointment] AS [a]
+WHERE ((([a].[Status] = 0) AND ([a].[ToTime] > GETUTCDATE())) AND ([a].[DocId] <> @__doctor_Id_0)) AND ([a].[SlotType] = N'other')
+ORDER BY [a].[ToTime] DESC" (0723d8ff)
+2022-03-31T15:27:38.1398310+05:30 0HMGIVJ73JCQD:00000002 [INF] Executed DbCommand ("159"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T15:27:38.8505375+05:30 0HMGIVJ73JCQD:00000002 [INF] Executed DbCommand ("158"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T15:27:39.3785415+05:30 0HMGIVJ73JCQD:00000002 [INF] Executed DbCommand ("161"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T15:27:39.8645297+05:30 0HMGIVJ73JCQD:00000002 [INF] Executed DbCommand ("158"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T15:29:24.3490164+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2022-03-31T15:29:24.3554870+05:30  [INF] Quartz Scheduler created (389d80b0)
+2022-03-31T15:29:24.3745845+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2022-03-31T15:29:24.3775880+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2022-03-31T15:29:24.3893871+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2022-03-31T15:29:24.3952961+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2022-03-31T15:29:24.4014312+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2022-03-31T15:29:24.5008408+05:30 0HMGIVKHANC6J:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2022-03-31T15:29:24.5009803+05:30 0HMGIVKHANC6K:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2022-03-31T15:29:24.5269520+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2022-03-31T15:29:24.5324899+05:30 0HMGIVKHANC6J:00000001 [INF] Request finished in 33.4301ms 200  (791a596a)
+2022-03-31T15:29:24.7336507+05:30 0HMGIVKHANC6K:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2022-03-31T15:29:24.7421073+05:30 0HMGIVKHANC6K:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-03-31T15:29:24.7535478+05:30 0HMGIVKHANC6K:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 7.5339ms. (50a9e262)
+2022-03-31T15:29:24.7610732+05:30 0HMGIVKHANC6K:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2022-03-31T15:29:24.7697368+05:30 0HMGIVKHANC6K:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 31.4521ms (afa2e885)
+2022-03-31T15:29:24.8195668+05:30 0HMGIVKHANC6K:00000001 [INF] Request finished in 279.8657ms 200 text/plain; charset=utf-8 (791a596a)
+2022-03-31T15:29:41.9382287+05:30 0HMGIVKHANC6J:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Email/GetDoctorToSendEmail   (ca22a1cb)
+2022-03-31T15:29:41.9461995+05:30 0HMGIVKHANC6J:00000002 [INF] Route matched with "{action = \"GetDoctorToSendEmail\", controller = \"Email\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDoctorToSendEmail()" on controller "MyClickDoctorBE.Controllers.EmailController" ("MyClickDoctorBE"). (122b2fdf)
+2022-03-31T15:29:42.0608412+05:30 0HMGIVKHANC6J:00000002 [INF] Executing action method "MyClickDoctorBE.Controllers.EmailController.GetDoctorToSendEmail (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-03-31T15:29:45.4391617+05:30 0HMGIVKHANC6J:00000002 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2022-03-31T15:29:45.4739803+05:30 0HMGIVKHANC6J:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-31T15:29:45.5562114+05:30 0HMGIVKHANC6J:00000002 [WRN] The LINQ expression '"where ((([a].UserType == 2) AndAlso ([a].Unscubscribe != 1)) AndAlso (ToDateTime(Convert([a].EmailUpdatedAt, Object)).Date != DateTime.UtcNow.Date))"' could not be translated and will be evaluated locally. (011792c6)
+2022-03-31T15:29:46.6125222+05:30 0HMGIVKHANC6J:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[BussinessStatus], [a].[CreatedAt], [a].[DeletedAt], [a].[DeletedBy], [a].[Email], [a].[EmailAuth], [a].[EmailOTP], [a].[EmailUpdatedAt], [a].[Isemail], [a].[LastMeeting], [a].[Lastlogin], [a].[MobileOTP], [a].[PhoneNo], [a].[SMSAuth], [a].[Status], [a].[Token], [a].[Unscubscribe], [a].[UpdatedAt], [a].[UpdatedBy], [a].[UserPassword], [a].[UserType]
+FROM [Users] AS [a]
+WHERE [a].[Status] = 1" (0723d8ff)
+2022-03-31T15:29:49.9308009+05:30 0HMGIVKHANC6J:00000002 [INF] Executed DbCommand ("158"ms) [Parameters=["@__item_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE [a].[UserId] = @__item_Id_0" (0723d8ff)
+2022-03-31T15:29:51.7202742+05:30 0HMGIVKHANC6J:00000002 [INF] Executed DbCommand ("157"ms) [Parameters=["@__doctor_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[DocId], [a].[Docavailable], [a].[DoctorType], [a].[Duration], [a].[FromTime], [a].[Isemail], [a].[MaxCount], [a].[Nurseavailable], [a].[Patientavailable], [a].[Pharmaavailable], [a].[SlotType], [a].[Status], [a].[Subject], [a].[ToTime], [a].[Type]
+FROM [DoctorAvailibiltyforAppointment] AS [a]
+WHERE ((([a].[Status] = 0) AND ([a].[ToTime] > GETUTCDATE())) AND ([a].[DocId] <> @__doctor_Id_0)) AND ([a].[SlotType] = N'other')
+ORDER BY [a].[ToTime] DESC" (0723d8ff)
+2022-03-31T15:29:52.8418671+05:30 0HMGIVKHANC6J:00000002 [INF] Executed DbCommand ("157"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T15:29:53.5705366+05:30 0HMGIVKHANC6J:00000002 [INF] Executed DbCommand ("156"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)
+2022-03-31T15:29:54.0928062+05:30 0HMGIVKHANC6J:00000002 [INF] Executed DbCommand ("158"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE ([a].[Status] = 1) AND ([a].[Id] = @__r_DocId_0)" (0723d8ff)
+2022-03-31T15:29:54.5659315+05:30 0HMGIVKHANC6J:00000002 [INF] Executed DbCommand ("156"ms) [Parameters=["@__r_DocId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [sp].[CatId]
+FROM [Doctorspecilization] AS [sp]
+WHERE (([sp].[DocId] = @__r_DocId_0) AND ([sp].[Status] = 1)) AND [sp].[Name] IS NOT NULL" (0723d8ff)

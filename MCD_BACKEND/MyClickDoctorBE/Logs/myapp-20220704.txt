@@ -1,0 +1,353 @@
+2022-07-04T15:43:15.6354868+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2022-07-04T15:43:15.6726552+05:30  [INF] Quartz Scheduler created (389d80b0)
+2022-07-04T15:43:15.6820604+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2022-07-04T15:43:15.6890195+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2022-07-04T15:43:15.7318173+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2022-07-04T15:43:15.7347808+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2022-07-04T15:43:15.7379787+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2022-07-04T15:43:15.7516958+05:30 0HMITKN7LIKDH:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2022-07-04T15:43:15.7516959+05:30 0HMITKN7LIKDI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2022-07-04T15:43:15.7898741+05:30 0HMITKN7LIKDH:00000001 [INF] Request finished in 41.0072ms 200  (791a596a)
+2022-07-04T15:43:15.8605734+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2022-07-04T15:43:16.1122375+05:30 0HMITKN7LIKDI:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T15:43:16.2192679+05:30 0HMITKN7LIKDI:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-07-04T15:43:16.2323936+05:30 0HMITKN7LIKDI:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 7.3155ms. (50a9e262)
+2022-07-04T15:43:16.2772454+05:30 0HMITKN7LIKDI:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2022-07-04T15:43:16.3218979+05:30 0HMITKN7LIKDI:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 169.3394ms (afa2e885)
+2022-07-04T15:43:16.4748478+05:30 0HMITKN7LIKDI:00000001 [INF] Request finished in 581.0395ms 200 text/plain; charset=utf-8 (791a596a)
+2022-07-04T15:43:16.7833018+05:30 0HMITKN7LIKDH:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/favicon.ico   (ca22a1cb)
+2022-07-04T15:43:16.8098242+05:30 0HMITKN7LIKDH:00000002 [INF] Request finished in 25.8335ms 404  (791a596a)
+2022-07-04T15:43:36.5656485+05:30 0HMITKN7LIKDI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Message/GetDoctorChatList?UserId=5   (ca22a1cb)
+2022-07-04T15:43:36.5758622+05:30 0HMITKN7LIKDI:00000002 [INF] Route matched with "{action = \"GetDoctorChatList\", controller = \"Message\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult GetDoctorChatList(Int32)" on controller "MyClickDoctorBE.Controllers.MessageController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T15:43:36.7695878+05:30 0HMITKN7LIKDI:00000002 [INF] Executing action method "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-07-04T15:43:41.5912369+05:30 0HMITKN7LIKDI:00000002 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2022-07-04T15:43:41.6362591+05:30 0HMITKN7LIKDI:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-07-04T15:43:43.7786756+05:30 0HMITKN7LIKDI:00000002 [INF] Executed DbCommand ("164"ms) [Parameters=["@__UserId_2='?' (DbType = Int32), @__UserId_3='?' (DbType = Int32), @__UserId_4='?' (DbType = Int32), @__UserId_0='?' (DbType = Int32), @__UserId_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id] AS [SenderId0], [r].[SenderId], @__UserId_2, [r].[RecieverId], [r].[SenderUserType], @__UserId_3, [r].[Message] AS [Messages], @__UserId_4, [r].[CreatedAt], [r].[SenderId]
+FROM [Chat] AS [r]
+WHERE ([r].[SenderId] = @__UserId_0) OR ([r].[RecieverId] = @__UserId_1)" (0723d8ff)
+2022-07-04T15:50:52.4330067+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2022-07-04T15:50:52.4531670+05:30  [INF] Quartz Scheduler created (389d80b0)
+2022-07-04T15:50:52.4664704+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2022-07-04T15:50:52.4688876+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2022-07-04T15:50:52.4749509+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2022-07-04T15:50:52.4838457+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2022-07-04T15:50:52.4857831+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2022-07-04T15:50:52.5614912+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2022-07-04T15:50:52.6776912+05:30 0HMITKRFRNV27:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2022-07-04T15:50:52.6775540+05:30 0HMITKRFRNV26:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2022-07-04T15:50:52.7028354+05:30 0HMITKRFRNV27:00000001 [INF] Request finished in 26.6206ms 200  (791a596a)
+2022-07-04T15:50:52.8561184+05:30 0HMITKRFRNV26:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T15:50:52.8645268+05:30 0HMITKRFRNV26:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-07-04T15:50:52.8759241+05:30 0HMITKRFRNV26:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 7.1191ms. (50a9e262)
+2022-07-04T15:50:52.8859663+05:30 0HMITKRFRNV26:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2022-07-04T15:50:52.8937676+05:30 0HMITKRFRNV26:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 33.6046ms (afa2e885)
+2022-07-04T15:50:52.9087232+05:30 0HMITKRFRNV26:00000001 [INF] Request finished in 227.9407ms 200 text/plain; charset=utf-8 (791a596a)
+2022-07-04T15:51:09.1449616+05:30 0HMITKRFRNV27:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Message/GetDoctorChatList?UserId=5   (ca22a1cb)
+2022-07-04T15:51:09.1558898+05:30 0HMITKRFRNV27:00000002 [INF] Route matched with "{action = \"GetDoctorChatList\", controller = \"Message\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult GetDoctorChatList(Int32)" on controller "MyClickDoctorBE.Controllers.MessageController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T15:51:09.2827635+05:30 0HMITKRFRNV27:00000002 [INF] Executing action method "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-07-04T15:51:13.9316440+05:30 0HMITKRFRNV27:00000002 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2022-07-04T15:51:13.9697691+05:30 0HMITKRFRNV27:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-07-04T15:51:16.0417073+05:30 0HMITKRFRNV27:00000002 [INF] Executed DbCommand ("164"ms) [Parameters=["@__UserId_2='?' (DbType = Int32), @__UserId_3='?' (DbType = Int32), @__UserId_4='?' (DbType = Int32), @__UserId_0='?' (DbType = Int32), @__UserId_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id] AS [SenderId0], [r].[SenderId], @__UserId_2, [r].[RecieverId], [r].[SenderUserType], @__UserId_3, [r].[Message] AS [Messages], @__UserId_4, [r].[CreatedAt], [r].[SenderId]
+FROM [Chat] AS [r]
+WHERE ([r].[SenderId] = @__UserId_0) OR ([r].[RecieverId] = @__UserId_1)" (0723d8ff)
+2022-07-04T15:52:13.6433677+05:30 0HMITKRFRNV27:00000002 [INF] Executed action method "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 64353.5912ms. (50a9e262)
+2022-07-04T15:52:13.6500774+05:30 0HMITKRFRNV27:00000002 [INF] Executing ObjectResult, writing value of type '"MyClickDoctorBE.Models.msglist"'. (8a1b66c8)
+2022-07-04T15:52:13.7095070+05:30 0HMITKRFRNV27:00000002 [INF] Executed action "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" in 64551.4006ms (afa2e885)
+2022-07-04T15:52:13.7153321+05:30 0HMITKRFRNV27:00000002 [INF] Request finished in 64567.2408ms 200 application/json; charset=utf-8 (791a596a)
+2022-07-04T15:52:16.9680348+05:30 0HMITKRFRNV27:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Message/GetDoctorChatList?UserId=5   (ca22a1cb)
+2022-07-04T15:52:16.9704148+05:30 0HMITKRFRNV27:00000003 [INF] Route matched with "{action = \"GetDoctorChatList\", controller = \"Message\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult GetDoctorChatList(Int32)" on controller "MyClickDoctorBE.Controllers.MessageController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T15:52:16.9726868+05:30 0HMITKRFRNV27:00000003 [INF] Executing action method "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-07-04T15:52:20.6988418+05:30 0HMITKRFRNV27:00000003 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-07-04T15:52:21.8403747+05:30 0HMITKRFRNV27:00000003 [INF] Executed DbCommand ("166"ms) [Parameters=["@__UserId_2='?' (DbType = Int32), @__UserId_3='?' (DbType = Int32), @__UserId_4='?' (DbType = Int32), @__UserId_0='?' (DbType = Int32), @__UserId_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id] AS [SenderId0], [r].[SenderId], @__UserId_2, [r].[RecieverId], [r].[SenderUserType], @__UserId_3, [r].[Message] AS [Messages], @__UserId_4, [r].[CreatedAt], [r].[SenderId]
+FROM [Chat] AS [r]
+WHERE ([r].[SenderId] = @__UserId_0) OR ([r].[RecieverId] = @__UserId_1)" (0723d8ff)
+2022-07-04T15:54:01.0217671+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2022-07-04T15:54:01.0305217+05:30  [INF] Quartz Scheduler created (389d80b0)
+2022-07-04T15:54:01.0424839+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2022-07-04T15:54:01.0458455+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2022-07-04T15:54:01.0512395+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2022-07-04T15:54:01.0554828+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2022-07-04T15:54:01.0575229+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2022-07-04T15:54:01.1325825+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2022-07-04T15:54:01.2751121+05:30 0HMITKT822KVA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2022-07-04T15:54:01.2751121+05:30 0HMITKT822KV9:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2022-07-04T15:54:01.3186614+05:30 0HMITKT822KV9:00000001 [INF] Request finished in 47.7789ms 200  (791a596a)
+2022-07-04T15:54:01.7408786+05:30 0HMITKT822KVA:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T15:54:01.8134779+05:30 0HMITKT822KVA:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-07-04T15:54:01.8875016+05:30 0HMITKT822KVA:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 7.8033ms. (50a9e262)
+2022-07-04T15:54:01.9826017+05:30 0HMITKT822KVA:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2022-07-04T15:54:02.0122095+05:30 0HMITKT822KVA:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 247.713ms (afa2e885)
+2022-07-04T15:54:02.0806755+05:30 0HMITKT822KVA:00000001 [INF] Request finished in 757.4549ms 200 text/plain; charset=utf-8 (791a596a)
+2022-07-04T15:54:07.6872156+05:30 0HMITKT822KV9:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Message/GetDoctorChatList?UserId=5   (ca22a1cb)
+2022-07-04T15:54:07.6978143+05:30 0HMITKT822KV9:00000002 [INF] Route matched with "{action = \"GetDoctorChatList\", controller = \"Message\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult GetDoctorChatList(Int32)" on controller "MyClickDoctorBE.Controllers.MessageController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T15:54:07.8696891+05:30 0HMITKT822KV9:00000002 [INF] Executing action method "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-07-04T15:54:12.9875217+05:30 0HMITKT822KV9:00000002 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2022-07-04T15:54:13.0268515+05:30 0HMITKT822KV9:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-07-04T15:54:15.0757532+05:30 0HMITKT822KV9:00000002 [INF] Executed DbCommand ("162"ms) [Parameters=["@__UserId_2='?' (DbType = Int32), @__UserId_3='?' (DbType = Int32), @__UserId_4='?' (DbType = Int32), @__UserId_0='?' (DbType = Int32), @__UserId_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id] AS [SenderId0], [r].[SenderId], @__UserId_2, [r].[RecieverId], [r].[SenderUserType], @__UserId_3, [r].[Message] AS [Messages], @__UserId_4, [r].[CreatedAt], [r].[SenderId]
+FROM [Chat] AS [r]
+WHERE ([r].[SenderId] = @__UserId_0) OR ([r].[RecieverId] = @__UserId_1)" (0723d8ff)
+2022-07-04T15:55:25.0519419+05:30 0HMITKT822KV9:00000002 [INF] Executed action method "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 77178.4699ms. (50a9e262)
+2022-07-04T15:55:25.0590832+05:30 0HMITKT822KV9:00000002 [INF] Executing ObjectResult, writing value of type '"MyClickDoctorBE.Models.msglist"'. (8a1b66c8)
+2022-07-04T15:55:25.1101306+05:30 0HMITKT822KV9:00000002 [INF] Executed action "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" in 77410.9358ms (afa2e885)
+2022-07-04T15:55:25.1122451+05:30 0HMITKT822KV9:00000002 [INF] Request finished in 77425.3534ms 200 application/json; charset=utf-8 (791a596a)
+2022-07-04T15:56:12.9672088+05:30 0HMITKT822KV9:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Message/GetDoctorChatList?UserId=5   (ca22a1cb)
+2022-07-04T15:56:12.9689737+05:30 0HMITKT822KV9:00000003 [INF] Route matched with "{action = \"GetDoctorChatList\", controller = \"Message\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult GetDoctorChatList(Int32)" on controller "MyClickDoctorBE.Controllers.MessageController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T15:56:12.9712539+05:30 0HMITKT822KV9:00000003 [INF] Executing action method "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-07-04T15:56:16.4006911+05:30 0HMITKT822KV9:00000003 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-07-04T15:56:17.5434805+05:30 0HMITKT822KV9:00000003 [INF] Executed DbCommand ("159"ms) [Parameters=["@__UserId_2='?' (DbType = Int32), @__UserId_3='?' (DbType = Int32), @__UserId_4='?' (DbType = Int32), @__UserId_0='?' (DbType = Int32), @__UserId_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id] AS [SenderId0], [r].[SenderId], @__UserId_2, [r].[RecieverId], [r].[SenderUserType], @__UserId_3, [r].[Message] AS [Messages], @__UserId_4, [r].[CreatedAt], [r].[SenderId]
+FROM [Chat] AS [r]
+WHERE ([r].[SenderId] = @__UserId_0) OR ([r].[RecieverId] = @__UserId_1)" (0723d8ff)
+2022-07-04T16:01:28.4065565+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2022-07-04T16:01:28.4125213+05:30  [INF] Quartz Scheduler created (389d80b0)
+2022-07-04T16:01:28.4221786+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2022-07-04T16:01:28.4244362+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2022-07-04T16:01:28.4302096+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2022-07-04T16:01:28.4325396+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2022-07-04T16:01:28.4349628+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2022-07-04T16:01:28.4934886+05:30 0HMITL1DB6R7S:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2022-07-04T16:01:28.4934886+05:30 0HMITL1DB6R7T:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2022-07-04T16:01:28.5216591+05:30 0HMITL1DB6R7S:00000001 [INF] Request finished in 29.765ms 200  (791a596a)
+2022-07-04T16:01:28.5449891+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2022-07-04T16:01:28.6917579+05:30 0HMITL1DB6R7T:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T16:01:28.6999152+05:30 0HMITL1DB6R7T:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-07-04T16:01:28.7109817+05:30 0HMITL1DB6R7T:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 6.6696ms. (50a9e262)
+2022-07-04T16:01:28.7185624+05:30 0HMITL1DB6R7T:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2022-07-04T16:01:28.7268846+05:30 0HMITL1DB6R7T:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 30.5361ms (afa2e885)
+2022-07-04T16:01:28.7393169+05:30 0HMITL1DB6R7T:00000001 [INF] Request finished in 243.1022ms 200 text/plain; charset=utf-8 (791a596a)
+2022-07-04T16:01:51.6766642+05:30 0HMITL1DB6R7S:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Message/GetDoctorChatList?UserId=5%20Request%20Method:%20GET   (ca22a1cb)
+2022-07-04T16:01:51.6911467+05:30 0HMITL1DB6R7S:00000002 [INF] Route matched with "{action = \"GetDoctorChatList\", controller = \"Message\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult GetDoctorChatList(Int32)" on controller "MyClickDoctorBE.Controllers.MessageController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T16:01:51.8245570+05:30 0HMITL1DB6R7S:00000002 [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'. (8a1b66c8)
+2022-07-04T16:01:51.8766757+05:30 0HMITL1DB6R7S:00000002 [INF] Executed action "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" in 183.3613ms (afa2e885)
+2022-07-04T16:01:51.8828979+05:30 0HMITL1DB6R7S:00000002 [INF] Request finished in 202.1166ms 400 application/json; charset=utf-8 (791a596a)
+2022-07-04T16:02:00.0995721+05:30 0HMITL1DB6R7T:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Message/GetDoctorChatList?UserId=5   (ca22a1cb)
+2022-07-04T16:02:00.1011811+05:30 0HMITL1DB6R7T:00000002 [INF] Route matched with "{action = \"GetDoctorChatList\", controller = \"Message\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult GetDoctorChatList(Int32)" on controller "MyClickDoctorBE.Controllers.MessageController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T16:02:00.1074828+05:30 0HMITL1DB6R7T:00000002 [INF] Executing action method "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-07-04T16:02:05.2064151+05:30 0HMITL1DB6R7T:00000002 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2022-07-04T16:02:05.2417466+05:30 0HMITL1DB6R7T:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-07-04T16:02:06.3530108+05:30 0HMITL1DB6R7T:00000002 [INF] Executed DbCommand ("160"ms) [Parameters=["@__UserId_2='?' (DbType = Int32), @__UserId_3='?' (DbType = Int32), @__UserId_4='?' (DbType = Int32), @__UserId_0='?' (DbType = Int32), @__UserId_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id] AS [SenderId0], [r].[SenderId], @__UserId_2, [r].[RecieverId], [r].[SenderUserType], @__UserId_3, [r].[Message] AS [Messages], @__UserId_4, [r].[CreatedAt], [r].[SenderId]
+FROM [Chat] AS [r]
+WHERE ([r].[SenderId] = @__UserId_0) OR ([r].[RecieverId] = @__UserId_1)" (0723d8ff)
+2022-07-04T16:07:52.0848286+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2022-07-04T16:07:52.1030694+05:30  [INF] Quartz Scheduler created (389d80b0)
+2022-07-04T16:07:52.1090417+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2022-07-04T16:07:52.1167658+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2022-07-04T16:07:52.1222601+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2022-07-04T16:07:52.1242543+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2022-07-04T16:07:52.1260772+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2022-07-04T16:07:52.2263815+05:30 0HMITL4VMU8FO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2022-07-04T16:07:52.2263814+05:30 0HMITL4VMU8FP:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2022-07-04T16:07:52.2335304+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2022-07-04T16:07:52.2636082+05:30 0HMITL4VMU8FP:00000001 [INF] Request finished in 39.2677ms 200  (791a596a)
+2022-07-04T16:07:52.4275607+05:30 0HMITL4VMU8FO:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T16:07:52.4359969+05:30 0HMITL4VMU8FO:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-07-04T16:07:52.4472168+05:30 0HMITL4VMU8FO:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 6.9663ms. (50a9e262)
+2022-07-04T16:07:52.4541812+05:30 0HMITL4VMU8FO:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2022-07-04T16:07:52.4628706+05:30 0HMITL4VMU8FO:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 30.7467ms (afa2e885)
+2022-07-04T16:07:52.4910118+05:30 0HMITL4VMU8FO:00000001 [INF] Request finished in 248.4455ms 200 text/plain; charset=utf-8 (791a596a)
+2022-07-04T16:08:03.5965780+05:30 0HMITL4VMU8FP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Message/GetDoctorChatList?UserId=5%20Request%20Method:%20GET   (ca22a1cb)
+2022-07-04T16:08:03.6087478+05:30 0HMITL4VMU8FP:00000002 [INF] Route matched with "{action = \"GetDoctorChatList\", controller = \"Message\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult GetDoctorChatList(Int32)" on controller "MyClickDoctorBE.Controllers.MessageController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T16:08:03.7292240+05:30 0HMITL4VMU8FP:00000002 [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'. (8a1b66c8)
+2022-07-04T16:08:03.7763347+05:30 0HMITL4VMU8FP:00000002 [INF] Executed action "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" in 165.4759ms (afa2e885)
+2022-07-04T16:08:03.8106645+05:30 0HMITL4VMU8FP:00000002 [INF] Request finished in 181.9416ms 400 application/json; charset=utf-8 (791a596a)
+2022-07-04T16:08:06.6493173+05:30 0HMITL4VMU8FO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Message/GetDoctorChatList?UserId=   (ca22a1cb)
+2022-07-04T16:08:06.6514248+05:30 0HMITL4VMU8FO:00000002 [INF] Route matched with "{action = \"GetDoctorChatList\", controller = \"Message\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult GetDoctorChatList(Int32)" on controller "MyClickDoctorBE.Controllers.MessageController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T16:08:06.6544683+05:30 0HMITL4VMU8FO:00000002 [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'. (8a1b66c8)
+2022-07-04T16:08:06.6569763+05:30 0HMITL4VMU8FO:00000002 [INF] Executed action "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" in 3.2911ms (afa2e885)
+2022-07-04T16:08:06.6764556+05:30 0HMITL4VMU8FO:00000002 [INF] Request finished in 10.7227ms 400 application/json; charset=utf-8 (791a596a)
+2022-07-04T16:08:10.1752823+05:30 0HMITL4VMU8FP:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Message/GetDoctorChatList?UserId=5   (ca22a1cb)
+2022-07-04T16:08:10.1778076+05:30 0HMITL4VMU8FP:00000003 [INF] Route matched with "{action = \"GetDoctorChatList\", controller = \"Message\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult GetDoctorChatList(Int32)" on controller "MyClickDoctorBE.Controllers.MessageController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T16:08:10.1827823+05:30 0HMITL4VMU8FP:00000003 [INF] Executing action method "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-07-04T16:08:18.2366305+05:30 0HMITL4VMU8FP:00000003 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2022-07-04T16:08:18.2722884+05:30 0HMITL4VMU8FP:00000003 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-07-04T16:08:20.3630967+05:30 0HMITL4VMU8FP:00000003 [INF] Executed DbCommand ("170"ms) [Parameters=["@__UserId_2='?' (DbType = Int32), @__UserId_3='?' (DbType = Int32), @__UserId_4='?' (DbType = Int32), @__UserId_0='?' (DbType = Int32), @__UserId_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id] AS [SenderId0], [r].[SenderId], @__UserId_2, [r].[RecieverId], [r].[SenderUserType], @__UserId_3, [r].[Message] AS [Messages], @__UserId_4, [r].[CreatedAt], [r].[SenderId]
+FROM [Chat] AS [r]
+WHERE ([r].[SenderId] = @__UserId_0) OR (([r].[RecieverId] = @__UserId_1) AND ([r].[Chattype] = N'chat'))" (0723d8ff)
+2022-07-04T16:09:46.2210619+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2022-07-04T16:09:46.2320482+05:30  [INF] Quartz Scheduler created (389d80b0)
+2022-07-04T16:09:46.2356127+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2022-07-04T16:09:46.2418525+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2022-07-04T16:09:46.2488887+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2022-07-04T16:09:46.2520462+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2022-07-04T16:09:46.2533828+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2022-07-04T16:09:46.3494784+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2022-07-04T16:09:46.4431178+05:30 0HMITL61O7MCJ:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2022-07-04T16:09:46.4431177+05:30 0HMITL61O7MCI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2022-07-04T16:09:46.4701840+05:30 0HMITL61O7MCJ:00000001 [INF] Request finished in 28.3057ms 200  (791a596a)
+2022-07-04T16:09:46.6345411+05:30 0HMITL61O7MCI:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T16:09:46.6433294+05:30 0HMITL61O7MCI:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-07-04T16:09:46.6550038+05:30 0HMITL61O7MCI:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 6.5719ms. (50a9e262)
+2022-07-04T16:09:46.6615893+05:30 0HMITL61O7MCI:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2022-07-04T16:09:46.6695897+05:30 0HMITL61O7MCI:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 30.6214ms (afa2e885)
+2022-07-04T16:09:46.6967015+05:30 0HMITL61O7MCI:00000001 [INF] Request finished in 237.1021ms 200 text/plain; charset=utf-8 (791a596a)
+2022-07-04T16:15:39.1487680+05:30 0HMITL61O7MCK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Message/GetDoctorChatList?UserId=5%20Request%20Method:%20GET   (ca22a1cb)
+2022-07-04T16:15:39.1602969+05:30 0HMITL61O7MCK:00000001 [INF] Route matched with "{action = \"GetDoctorChatList\", controller = \"Message\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult GetDoctorChatList(Int32)" on controller "MyClickDoctorBE.Controllers.MessageController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T16:15:39.2809716+05:30 0HMITL61O7MCK:00000001 [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'. (8a1b66c8)
+2022-07-04T16:15:39.3287098+05:30 0HMITL61O7MCK:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" in 166.4102ms (afa2e885)
+2022-07-04T16:15:39.3581497+05:30 0HMITL61O7MCK:00000001 [INF] Request finished in 181.5333ms 400 application/json; charset=utf-8 (791a596a)
+2022-07-04T16:15:47.1357151+05:30 0HMITL61O7MCK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Message/GetDoctorChatList?UserId=5   (ca22a1cb)
+2022-07-04T16:15:47.1374607+05:30 0HMITL61O7MCK:00000002 [INF] Route matched with "{action = \"GetDoctorChatList\", controller = \"Message\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult GetDoctorChatList(Int32)" on controller "MyClickDoctorBE.Controllers.MessageController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T16:15:47.1487081+05:30 0HMITL61O7MCK:00000002 [INF] Executing action method "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-07-04T16:15:54.0921210+05:30 0HMITL61O7MCK:00000002 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2022-07-04T16:15:54.1277121+05:30 0HMITL61O7MCK:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-07-04T16:15:56.2228049+05:30 0HMITL61O7MCK:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=["@__UserId_2='?' (DbType = Int32), @__UserId_3='?' (DbType = Int32), @__UserId_4='?' (DbType = Int32), @__UserId_0='?' (DbType = Int32), @__UserId_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id] AS [SenderId0], [r].[SenderId], @__UserId_2, [r].[RecieverId], [r].[SenderUserType], @__UserId_3, [r].[Message] AS [Messages], @__UserId_4, [r].[CreatedAt], [r].[SenderId]
+FROM [Chat] AS [r]
+WHERE (([r].[SenderId] = @__UserId_0) OR ([r].[RecieverId] = @__UserId_1)) AND ([r].[Chattype] = N'chat')" (0723d8ff)
+2022-07-04T16:24:45.6698303+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2022-07-04T16:24:45.6757664+05:30  [INF] Quartz Scheduler created (389d80b0)
+2022-07-04T16:24:45.6786083+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2022-07-04T16:24:45.6823949+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2022-07-04T16:24:45.6936579+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2022-07-04T16:24:45.6977346+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2022-07-04T16:24:45.6991939+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2022-07-04T16:24:45.7963098+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2022-07-04T16:24:45.8396308+05:30 0HMITLEDPCAC2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2022-07-04T16:24:45.8376451+05:30 0HMITLEDPCAC1:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2022-07-04T16:24:45.9765663+05:30 0HMITLEDPCAC1:00000001 [INF] Request finished in 100.3857ms 200  (791a596a)
+2022-07-04T16:24:46.7829772+05:30 0HMITLEDPCAC2:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T16:24:46.7953964+05:30 0HMITLEDPCAC2:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-07-04T16:24:46.8094777+05:30 0HMITLEDPCAC2:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 9.5361ms. (50a9e262)
+2022-07-04T16:24:46.8206724+05:30 0HMITLEDPCAC2:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2022-07-04T16:24:46.8374636+05:30 0HMITLEDPCAC2:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 42.4614ms (afa2e885)
+2022-07-04T16:24:46.8649033+05:30 0HMITLEDPCAC2:00000001 [INF] Request finished in 1017.2147ms 200 text/plain; charset=utf-8 (791a596a)
+2022-07-04T16:24:47.2736036+05:30 0HMITLEDPCAC1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/favicon.ico   (ca22a1cb)
+2022-07-04T16:24:47.3049771+05:30 0HMITLEDPCAC1:00000002 [INF] Request finished in 28.0864ms 404  (791a596a)
+2022-07-04T16:25:46.2671999+05:30 0HMITLEDPCAC2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Message/GetDoctorChatList?UserId=5   (ca22a1cb)
+2022-07-04T16:25:46.2821421+05:30 0HMITLEDPCAC2:00000002 [INF] Route matched with "{action = \"GetDoctorChatList\", controller = \"Message\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult GetDoctorChatList(Int32)" on controller "MyClickDoctorBE.Controllers.MessageController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T16:25:46.4634214+05:30 0HMITLEDPCAC2:00000002 [INF] Executing action method "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-07-04T16:25:54.5273689+05:30 0HMITLEDPCAC2:00000002 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2022-07-04T16:25:54.5747096+05:30 0HMITLEDPCAC2:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-07-04T16:25:56.6531398+05:30 0HMITLEDPCAC2:00000002 [INF] Executed DbCommand ("163"ms) [Parameters=["@__UserId_2='?' (DbType = Int32), @__UserId_3='?' (DbType = Int32), @__UserId_4='?' (DbType = Int32), @__UserId_0='?' (DbType = Int32), @__UserId_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id] AS [SenderId0], [r].[SenderId], @__UserId_2, [r].[RecieverId], [r].[SenderUserType], @__UserId_3, [r].[Message] AS [Messages], @__UserId_4, [r].[CreatedAt], [r].[SenderId]
+FROM [Chat] AS [r]
+WHERE (([r].[SenderId] = @__UserId_0) OR ([r].[RecieverId] = @__UserId_1)) AND ([r].[Chattype] = N'chat')" (0723d8ff)
+2022-07-04T16:28:36.6766119+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2022-07-04T16:28:36.6863088+05:30  [INF] Quartz Scheduler created (389d80b0)
+2022-07-04T16:28:36.6896064+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2022-07-04T16:28:36.6935934+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2022-07-04T16:28:36.7009105+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2022-07-04T16:28:36.7029880+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2022-07-04T16:28:36.7052224+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2022-07-04T16:28:36.7793373+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2022-07-04T16:28:36.8986082+05:30 0HMITLGIL4TS9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2022-07-04T16:28:36.8986082+05:30 0HMITLGIL4TSA:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2022-07-04T16:28:36.9267075+05:30 0HMITLGIL4TSA:00000001 [INF] Request finished in 30.4982ms 200  (791a596a)
+2022-07-04T16:28:37.0951432+05:30 0HMITLGIL4TS9:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T16:28:37.1027363+05:30 0HMITLGIL4TS9:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-07-04T16:28:37.1137774+05:30 0HMITLGIL4TS9:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 7.4083ms. (50a9e262)
+2022-07-04T16:28:37.1204697+05:30 0HMITLGIL4TS9:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2022-07-04T16:28:37.1285294+05:30 0HMITLGIL4TS9:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 29.7381ms (afa2e885)
+2022-07-04T16:28:37.1352626+05:30 0HMITLGIL4TS9:00000001 [INF] Request finished in 239.9522ms 200 text/plain; charset=utf-8 (791a596a)
+2022-07-04T16:28:50.0354638+05:30 0HMITLGIL4TSA:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Message/GetDoctorChatList?UserId=5   (ca22a1cb)
+2022-07-04T16:28:50.0455835+05:30 0HMITLGIL4TSA:00000002 [INF] Route matched with "{action = \"GetDoctorChatList\", controller = \"Message\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult GetDoctorChatList(Int32)" on controller "MyClickDoctorBE.Controllers.MessageController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T16:28:50.1680086+05:30 0HMITLGIL4TSA:00000002 [INF] Executing action method "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-07-04T16:28:56.1970603+05:30 0HMITLGIL4TSA:00000002 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2022-07-04T16:28:56.2321785+05:30 0HMITLGIL4TSA:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-07-04T16:28:58.2995364+05:30 0HMITLGIL4TSA:00000002 [INF] Executed DbCommand ("161"ms) [Parameters=["@__UserId_2='?' (DbType = Int32), @__UserId_3='?' (DbType = Int32), @__UserId_4='?' (DbType = Int32), @__UserId_0='?' (DbType = Int32), @__UserId_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id] AS [SenderId0], [r].[SenderId], @__UserId_2, [r].[RecieverId], [r].[SenderUserType], @__UserId_3, [r].[Message] AS [Messages], @__UserId_4, [r].[CreatedAt], [r].[SenderId]
+FROM [Chat] AS [r]
+WHERE (([r].[SenderId] = @__UserId_0) OR ([r].[RecieverId] = @__UserId_1)) AND ([r].[Chattype] = N'chat')" (0723d8ff)
+2022-07-04T16:30:00.1090054+05:30 0HMITLGIL4TSA:00000002 [INF] Executed action method "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 69939.3795ms. (50a9e262)
+2022-07-04T16:30:00.1115175+05:30 0HMITLGIL4TSA:00000002 [INF] Executing ObjectResult, writing value of type '"MyClickDoctorBE.Models.msglist"'. (8a1b66c8)
+2022-07-04T16:30:00.1800099+05:30 0HMITLGIL4TSA:00000002 [INF] Executed action "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" in 70132.4368ms (afa2e885)
+2022-07-04T16:30:00.1862447+05:30 0HMITLGIL4TSA:00000002 [INF] Request finished in 70147.2585ms 200 application/json; charset=utf-8 (791a596a)
+2022-07-04T16:53:39.8205259+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2022-07-04T16:53:39.8862174+05:30  [INF] Quartz Scheduler created (389d80b0)
+2022-07-04T16:53:39.8914721+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2022-07-04T16:53:39.8977943+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2022-07-04T16:53:39.9125775+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2022-07-04T16:53:39.9153163+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2022-07-04T16:53:39.9179252+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2022-07-04T16:53:40.1700534+05:30 0HMITLUIJO5AR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2022-07-04T16:53:40.1700534+05:30 0HMITLUIJO5AQ:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2022-07-04T16:53:40.2503247+05:30 0HMITLUIJO5AQ:00000001 [INF] Request finished in 109.9464ms 200  (791a596a)
+2022-07-04T16:53:40.2832809+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2022-07-04T16:53:40.4242402+05:30 0HMITLUIJO5AR:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T16:53:40.4334363+05:30 0HMITLUIJO5AR:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-07-04T16:53:40.4449112+05:30 0HMITLUIJO5AR:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 7.1956ms. (50a9e262)
+2022-07-04T16:53:40.4529097+05:30 0HMITLUIJO5AR:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2022-07-04T16:53:40.4630173+05:30 0HMITLUIJO5AR:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 32.5283ms (afa2e885)
+2022-07-04T16:53:40.5194433+05:30 0HMITLUIJO5AR:00000001 [INF] Request finished in 342.8476ms 200 text/plain; charset=utf-8 (791a596a)
+2022-07-04T16:53:47.1733587+05:30 0HMITLUIJO5AQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Message/GetDoctorChatList?UserId=5   (ca22a1cb)
+2022-07-04T16:53:47.1834511+05:30 0HMITLUIJO5AQ:00000002 [INF] Route matched with "{action = \"GetDoctorChatList\", controller = \"Message\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult GetDoctorChatList(Int32)" on controller "MyClickDoctorBE.Controllers.MessageController" ("MyClickDoctorBE"). (122b2fdf)
+2022-07-04T16:53:47.3101455+05:30 0HMITLUIJO5AQ:00000002 [INF] Executing action method "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-07-04T16:53:51.6134757+05:30 0HMITLUIJO5AQ:00000002 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2022-07-04T16:53:51.6481129+05:30 0HMITLUIJO5AQ:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-07-04T16:53:52.7699764+05:30 0HMITLUIJO5AQ:00000002 [INF] Executed DbCommand ("167"ms) [Parameters=["@__UserId_2='?' (DbType = Int32), @__UserId_3='?' (DbType = Int32), @__UserId_4='?' (DbType = Int32), @__UserId_0='?' (DbType = Int32), @__UserId_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id] AS [SenderId0], [r].[SenderId], @__UserId_2, [r].[RecieverId], [r].[SenderUserType], @__UserId_3, [r].[Message] AS [Messages], @__UserId_4, [r].[CreatedAt], [r].[SenderId]
+FROM [Chat] AS [r]
+WHERE (([r].[SenderId] = @__UserId_0) OR ([r].[RecieverId] = @__UserId_1)) AND ([r].[Chattype] = N'chat')" (0723d8ff)
+2022-07-04T16:54:03.3279999+05:30 0HMITLUIJO5AQ:00000002 [INF] Executed action method "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 16015.097ms. (50a9e262)
+2022-07-04T16:54:03.3309789+05:30 0HMITLUIJO5AQ:00000002 [INF] Executing ObjectResult, writing value of type '"MyClickDoctorBE.Models.msglist"'. (8a1b66c8)
+2022-07-04T16:54:03.3851373+05:30 0HMITLUIJO5AQ:00000002 [INF] Executed action "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" in 16199.5674ms (afa2e885)
+2022-07-04T16:54:03.3951241+05:30 0HMITLUIJO5AQ:00000002 [INF] Request finished in 16213.911ms 200 application/json; charset=utf-8 (791a596a)

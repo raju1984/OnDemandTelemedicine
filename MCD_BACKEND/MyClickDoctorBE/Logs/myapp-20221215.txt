@@ -1,0 +1,652 @@
+2022-12-15T20:19:58.0823451+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2022-12-15T20:19:58.1050975+05:30  [INF] Quartz Scheduler created (389d80b0)
+2022-12-15T20:19:58.1513244+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2022-12-15T20:19:58.1588801+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2022-12-15T20:19:58.1699158+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2022-12-15T20:19:58.1762959+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2022-12-15T20:19:58.1787183+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2022-12-15T20:19:58.1894252+05:30 0HMMULEHEQO7R:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2022-12-15T20:19:58.1894252+05:30 0HMMULEHEQO7Q:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2022-12-15T20:19:58.2462334+05:30 0HMMULEHEQO7Q:00000001 [INF] Request finished in 51.644ms 200  (791a596a)
+2022-12-15T20:19:58.3221132+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2022-12-15T20:19:58.3223445+05:30 0HMMULEHEQO7R:00000001 [WRN] Error unprotecting the session cookie. (65f95c31)
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-12-15T20:19:58.9524266+05:30 0HMMULEHEQO7R:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2022-12-15T20:19:59.0435291+05:30 0HMMULEHEQO7R:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-12-15T20:19:59.1166970+05:30 0HMMULEHEQO7R:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 8.6677ms. (50a9e262)
+2022-12-15T20:19:59.1412837+05:30 0HMMULEHEQO7R:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2022-12-15T20:19:59.1607401+05:30 0HMMULEHEQO7R:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 201.6635ms (afa2e885)
+2022-12-15T20:19:59.2457820+05:30 0HMMULEHEQO7R:00000001 [INF] Request finished in 1041.2779ms 200 text/plain; charset=utf-8 (791a596a)
+2022-12-15T20:19:59.2509342+05:30 0HMMULEHEQO7Q:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/favicon.ico   (ca22a1cb)
+2022-12-15T20:19:59.2562952+05:30 0HMMULEHEQO7Q:00000002 [WRN] Error unprotecting the session cookie. (65f95c31)
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-12-15T20:19:59.2951079+05:30 0HMMULEHEQO7Q:00000002 [INF] Request finished in 42.9531ms 404  (791a596a)
+2022-12-15T20:20:19.0618824+05:30 0HMMULEHEQO7R:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Message/GetDoctorChatList?UserId=11   (ca22a1cb)
+2022-12-15T20:20:19.0643085+05:30 0HMMULEHEQO7R:00000002 [WRN] Error unprotecting the session cookie. (65f95c31)
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-12-15T20:20:19.0758781+05:30 0HMMULEHEQO7R:00000002 [INF] Route matched with "{action = \"GetDoctorChatList\", controller = \"Message\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult GetDoctorChatList(Int32)" on controller "MyClickDoctorBE.Controllers.MessageController" ("MyClickDoctorBE"). (122b2fdf)
+2022-12-15T20:20:19.2623042+05:30 0HMMULEHEQO7R:00000002 [INF] Executing action method "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-12-15T20:20:25.7313608+05:30 0HMMULEHEQO7R:00000002 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2022-12-15T20:20:25.7857381+05:30 0HMMULEHEQO7R:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-12-15T20:20:27.7537465+05:30 0HMMULEHEQO7R:00000002 [WRN] The LINQ expression '"where ([a].UserId == GetRecieverId([r].RecieverId, __UserId_5, [r].SenderId))"' could not be translated and will be evaluated locally. (011792c6)
+2022-12-15T20:20:27.7616802+05:30 0HMMULEHEQO7R:00000002 [WRN] The LINQ expression '"FirstOrDefault()"' could not be translated and will be evaluated locally. (011792c6)
+2022-12-15T20:20:27.7672833+05:30 0HMMULEHEQO7R:00000002 [WRN] The LINQ expression '"where ([a].UserId == GetRecieverId([r].RecieverId, __UserId_5, [r].SenderId))"' could not be translated and will be evaluated locally. (011792c6)
+2022-12-15T20:20:27.7694676+05:30 0HMMULEHEQO7R:00000002 [WRN] The LINQ expression '"FirstOrDefault()"' could not be translated and will be evaluated locally. (011792c6)
+2022-12-15T20:20:27.7716031+05:30 0HMMULEHEQO7R:00000002 [WRN] The LINQ expression '"where ([a].UserId == GetRecieverId([r].RecieverId, __UserId_6, [r].SenderId))"' could not be translated and will be evaluated locally. (011792c6)
+2022-12-15T20:20:27.7739651+05:30 0HMMULEHEQO7R:00000002 [WRN] The LINQ expression '"FirstOrDefault()"' could not be translated and will be evaluated locally. (011792c6)
+2022-12-15T20:20:27.7765100+05:30 0HMMULEHEQO7R:00000002 [WRN] The LINQ expression '"where ([a].UserId == GetRecieverId([r].RecieverId, __UserId_6, [r].SenderId))"' could not be translated and will be evaluated locally. (011792c6)
+2022-12-15T20:20:27.7790771+05:30 0HMMULEHEQO7R:00000002 [WRN] The LINQ expression '"FirstOrDefault()"' could not be translated and will be evaluated locally. (011792c6)
+2022-12-15T20:20:27.7815034+05:30 0HMMULEHEQO7R:00000002 [WRN] The LINQ expression '"where ([a].UserId == GetRecieverId([r].RecieverId, __UserId_6, [r].SenderId))"' could not be translated and will be evaluated locally. (011792c6)
+2022-12-15T20:20:27.7841641+05:30 0HMMULEHEQO7R:00000002 [WRN] The LINQ expression '"FirstOrDefault()"' could not be translated and will be evaluated locally. (011792c6)
+2022-12-15T20:20:28.9723689+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("178"ms) [Parameters=["@__UserId_2='?' (DbType = Int32), @__UserId_3='?' (DbType = Int32), @__UserId_4='?' (DbType = Int32), @__UserId_0='?' (DbType = Int32), @__UserId_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id] AS [SenderId0], [r].[SenderId], @__UserId_2, [r].[RecieverId], [r].[SenderUserType], [r].[RecieverUserType], @__UserId_3, [r].[Message] AS [Messages], @__UserId_4, [r].[CreatedAt], [r].[ConnectionId]
+FROM [Chat] AS [r]
+WHERE ((((([r].[SenderId] = @__UserId_0) OR ([r].[RecieverId] = @__UserId_1)) AND ([r].[Chattype] = N'chat')) AND [r].[Message] IS NOT NULL) AND (([r].[Message] <> N'') OR [r].[Message] IS NULL)) AND ([r].[Chatwith] = N'doctor')" (0723d8ff)
+2022-12-15T20:20:30.3253331+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("175"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:30.5050866+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:30.8568589+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:31.0322061+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:31.4021191+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("178"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:31.5798575+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("176"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:31.9341806+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:32.1110468+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("175"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:32.4651246+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("175"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:32.6397933+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:32.9906366+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:33.1654699+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:33.5156134+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:33.6926263+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("175"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:34.0423784+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:34.2166187+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:34.5754894+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("175"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:34.7506669+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:35.1014750+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:35.2758023+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:35.6292352+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("178"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:35.8044984+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:36.1550926+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:36.3344269+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:36.6884870+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:36.8650983+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("175"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:37.2159669+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:37.3909600+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:37.7432522+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:37.9178878+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:38.2678921+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:38.4408934+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("171"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:38.8065312+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("180"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:38.9842341+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("176"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:39.3358992+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:39.5178903+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:39.8746756+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:40.0494511+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:40.4000300+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:40.5761737+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:40.9486100+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("191"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:41.1276362+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:41.4796977+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:41.6534202+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:42.0035139+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:42.1782085+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:42.5291431+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:42.7041664+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:43.0533788+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:43.2287691+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:43.5783789+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:43.7527421+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:44.1013437+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:44.2838415+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("175"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:44.6376805+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("177"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:44.8153051+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:45.1904763+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("188"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:45.3641284+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:45.7170960+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("176"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:45.8945855+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:46.2466327+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("175"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:46.4281702+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("179"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:46.7769649+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:46.9511805+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:47.3042447+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:47.4794342+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:47.8359590+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("179"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:48.0087574+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("171"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:48.3600267+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:48.5399065+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("176"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:48.8928050+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:49.0686724+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:49.4409453+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("177"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:49.6735417+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("177"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:50.0278416+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("175"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:50.2034708+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:50.5519754+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:50.7286030+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:51.0800359+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("176"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:51.2544767+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:51.6120441+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:51.7868991+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:52.1373674+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:52.3127098+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:52.6640755+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:52.8506915+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("179"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:53.2060412+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:53.3896623+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("180"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:53.7431110+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("177"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:53.9198790+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("175"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:54.2691249+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:54.4440456+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:54.7978796+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("178"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:54.9725750+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:55.3223706+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:55.4971347+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:55.8771033+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("176"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:56.0523305+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:56.4090457+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:56.5855874+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("175"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:56.9492793+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("185"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:57.1287336+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("176"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:57.4782371+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:57.6540125+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:58.0048951+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:58.1801347+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:58.5294386+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:58.7039880+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:59.0527562+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:59.2393610+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:20:59.5981494+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("180"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:20:59.7745936+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:00.1264085+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("175"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:00.3002214+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:00.6567844+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("176"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:00.8310789+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:01.1818177+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:01.3589563+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:01.7117587+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:01.8922642+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:02.2417059+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:02.4170417+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:02.7664738+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:02.9535090+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("177"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:03.3025402+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:03.4762245+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:03.8475493+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("180"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:04.0343945+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:04.3879837+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:04.5632884+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:04.9143836+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:05.1076940+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("181"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:05.4685065+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("182"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:05.6703735+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("175"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:06.0217640+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:06.1973645+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:06.5472100+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:06.7221460+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:07.0797042+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("181"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:07.2548227+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:07.6080340+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:07.7843582+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:08.1342601+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:08.3078246+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("171"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:08.6582694+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:08.8342304+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:09.1921812+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:09.3751823+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("180"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:09.7275394+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("176"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:09.9075872+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:10.2616899+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:10.4443721+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:10.7951040+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:10.9697906+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:11.3224960+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("177"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:11.4972191+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:11.8522019+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("175"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:12.0268867+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:12.3814477+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:12.5564929+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:12.9141419+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("180"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:13.0916304+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("171"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:13.4516625+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("175"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:13.6274667+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:13.9776130+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:14.1568416+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:14.5136154+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:14.6960521+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:15.0480422+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:15.2238989+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:15.5752852+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:15.7505420+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:16.0998421+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:16.2813195+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("176"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:16.6379916+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("175"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:16.8136004+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:17.1721886+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("182"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:17.3548501+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:17.7053458+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:17.8822768+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:18.2314697+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:18.4134278+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("180"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:18.7646563+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:18.9399180+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:19.2891386+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:19.4652886+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:19.8177846+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:19.9927031+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:20.3418177+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-12-15T20:21:20.5168980+05:30 0HMMULEHEQO7R:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-12-15T20:21:57.8587183+05:30 0HMMULEHEQO7R:00000002 [ERR] An exception occurred in the database while iterating the results of a query for context type '"MyClickDoctorBE.DatabaseEntity.MyClickDoctorV4"'."
+""System.NullReferenceException: Object reference not set to an instance of an object.
+   at MyClickDoctorBE.Models.AppDbCommonLogic.GetDoctorChatName(Nullable`1 SenderId, Nullable`1 RecieverId, Int32 UserId) in E:\StagingMCD_API\MyClickDoctorBE\Models\AppDbCommonLogic.cs:line 3822
+   at lambda_method(Closure , QueryContext , ValueBuffer )
+   at Microsoft.EntityFrameworkCore.Query.ExpressionVisitors.Internal.ProjectionShaper.TypedProjectionShaper`3.Shape(QueryContext queryContext, ValueBuffer& valueBuffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()" (64e2593c)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at MyClickDoctorBE.Models.AppDbCommonLogic.GetDoctorChatName(Nullable`1 SenderId, Nullable`1 RecieverId, Int32 UserId) in E:\StagingMCD_API\MyClickDoctorBE\Models\AppDbCommonLogic.cs:line 3822
+   at lambda_method(Closure , QueryContext , ValueBuffer )
+   at Microsoft.EntityFrameworkCore.Query.ExpressionVisitors.Internal.ProjectionShaper.TypedProjectionShaper`3.Shape(QueryContext queryContext, ValueBuffer& valueBuffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()

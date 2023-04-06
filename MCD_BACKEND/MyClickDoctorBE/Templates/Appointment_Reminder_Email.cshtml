@@ -1,0 +1,80 @@
+﻿@model MyClickDoctorBE.Models.RemainderEmail
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body style="background: #eff7f8; padding:0px; margin:0px;font-family: Trebuchet MS sans-serif; height: 100vh;">
+
+    <style type="text/css">
+        p b {
+            color: #000;
+        }
+
+        p {
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+            font-size: 13px;
+            line-height: 18px;
+            margin-bottom: 6px;
+            color: #545454;
+        }
+
+        .unsubscribe {
+            text-align: center;
+            background: #ff2525;
+            color: #FFF;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: block;
+            padding: 15px;
+            border-radius: 4px;
+            letter-spacing: 1px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+    </style>
+
+    <table style="width: 600px;margin: auto; background:#FFF; padding:0.5em 1em;height: 100%;box-shadow: #3333331c 0px 5px 10px;">
+        <tbody>
+            <tr>
+
+                <td>
+                    <table style="width: 100%;border-spacing: 10px;">
+                        <tbody>
+                            <tr>
+                                <td><img src="@Model.ApiPath/TempImages/myclickdoctor_new_HUN.png" width="100"></td>
+                                <td width="120">
+                                    <p>Contact <br /><b style="font-size: 16px;">+36 1 336 21 04</b></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="    border-top: 1px solid #e9e9e9; border-bottom: 1px solid #e9e9e9;">
+                    <p>Kedves @Model.Name!</p>
+                    <p>Ezt az emlékeztető e-mailt azért kapta, mert konzultációs időpontot foglalt a myclickdoctorban. A konzultációig hátralévő idő: @Model.RemainingTime</p>
+
+                    <p>A konzultáció adatai a következőek:</p>
+                    <p><b>Konzulens:</b> @Model.Appointmentwith</p>
+                    <p><b>A konzultáció kezdete:</b> @Model.StartTime</p>
+                    <p><b>Időtartam:</b> @Model.Duration perc</p>
+                    <p><b>Konzultáció típus:</b>@Model.AppointmentType</p>
+
+                    <p>A konzultációhoz az alábbi linken tud csatlakozni:</p>
+                    <p><a href="https://test.myclickdoctor.com/Count-down?AppId=@Model.AppointmentId" style="text-decoration: none;"> Kattints ide</a></p>
+
+                    <p><b>Üdvözlettel,</b></p>
+                    <p>Blasszauer Celia és a MedicalScan csapata</p>
+
+                </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+</body>
+</html>

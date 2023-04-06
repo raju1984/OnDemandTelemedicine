@@ -1,0 +1,46 @@
+2022-12-08T17:00:27.5474725+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2022-12-08T17:00:27.5540280+05:30  [INF] Quartz Scheduler created (389d80b0)
+2022-12-08T17:00:27.5577067+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2022-12-08T17:00:27.5639178+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2022-12-08T17:00:27.5805417+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2022-12-08T17:00:27.5892122+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2022-12-08T17:00:27.6002919+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2022-12-08T17:00:27.6267770+05:30 0HMMP1UDGH28F:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2022-12-08T17:00:27.6267770+05:30 0HMMP1UDGH28G:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2022-12-08T17:00:27.6688731+05:30 0HMMP1UDGH28G:00000001 [INF] Request finished in 39.5172ms 200  (791a596a)
+2022-12-08T17:00:27.7307656+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2022-12-08T17:00:27.8748024+05:30 0HMMP1UDGH28F:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2022-12-08T17:00:27.8900313+05:30 0HMMP1UDGH28F:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-12-08T17:00:27.9076050+05:30 0HMMP1UDGH28F:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 8.8089ms. (50a9e262)
+2022-12-08T17:00:27.9172424+05:30 0HMMP1UDGH28F:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2022-12-08T17:00:27.9263463+05:30 0HMMP1UDGH28F:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 46.5152ms (afa2e885)
+2022-12-08T17:00:27.9355908+05:30 0HMMP1UDGH28F:00000001 [INF] Request finished in 309.972ms 200 text/plain; charset=utf-8 (791a596a)
+2022-12-08T17:00:28.0070049+05:30 0HMMP1UDGH28G:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/favicon.ico   (ca22a1cb)
+2022-12-08T17:00:28.0551588+05:30 0HMMP1UDGH28G:00000002 [INF] Request finished in 46.5395ms 404  (791a596a)
+2022-12-08T17:01:32.0255398+05:30 0HMMP1UDGH28H:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44365/api/Admin/AddProject application/json 109 (ca22a1cb)
+2022-12-08T17:01:32.0631370+05:30 0HMMP1UDGH28H:00000001 [INF] Route matched with "{action = \"AddProject\", controller = \"Admin\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult AddProject(MyClickDoctorBE.Models.ProjectModel)" on controller "MyClickDoctorBE.Controllers.AdminController" ("MyClickDoctorBE"). (122b2fdf)
+2022-12-08T17:01:32.3441874+05:30 0HMMP1UDGH28H:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.AdminController.AddProject (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-12-08T17:01:32.7656445+05:30 0HMMP1UDGH28H:00000001 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2022-12-08T17:01:32.8260050+05:30 0HMMP1UDGH28H:00000001 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-12-08T17:01:34.0263213+05:30 0HMMP1UDGH28H:00000001 [INF] Executed DbCommand ("155"ms) [Parameters=["@p0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Projects] ([Name])
+VALUES (@p0);
+SELECT [Id]
+FROM [Projects]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2022-12-08T17:01:34.2094772+05:30 0HMMP1UDGH28H:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.AdminController.AddProject (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1859.2993ms. (50a9e262)
+2022-12-08T17:01:34.2175728+05:30 0HMMP1UDGH28H:00000001 [INF] Executing ObjectResult, writing value of type '"MyClickDoctorBE.Models.ApiResponse"'. (8a1b66c8)
+2022-12-08T17:01:34.2580194+05:30 0HMMP1UDGH28H:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.AdminController.AddProject (MyClickDoctorBE)" in 2192.9557ms (afa2e885)
+2022-12-08T17:01:34.2668079+05:30 0HMMP1UDGH28H:00000001 [INF] Request finished in 2235.86ms 200 application/json; charset=utf-8 (791a596a)
+2022-12-08T17:02:52.8251535+05:30 0HMMP1UDGH28I:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44365/api/Message/CreateNewchatGroup application/json 109 (ca22a1cb)
+2022-12-08T17:02:52.8577559+05:30 0HMMP1UDGH28I:00000001 [INF] Route matched with "{action = \"CreateNewchatGroup\", controller = \"Message\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateNewchatGroup(MyClickDoctorBE.Models.GroupchatViewModel)" on controller "MyClickDoctorBE.Controllers.MessageController" ("MyClickDoctorBE"). (122b2fdf)
+2022-12-08T17:02:52.8851076+05:30 0HMMP1UDGH28I:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.MessageController.CreateNewchatGroup (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-12-08T17:03:00.3193122+05:30 0HMMP1UDGH28I:00000001 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)

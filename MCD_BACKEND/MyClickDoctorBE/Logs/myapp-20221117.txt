@@ -1,0 +1,376 @@
+2022-11-17T12:41:56.7034113+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2022-11-17T12:41:57.3704390+05:30  [INF] Quartz Scheduler created (389d80b0)
+2022-11-17T12:41:57.3850387+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2022-11-17T12:41:57.3924400+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2022-11-17T12:41:57.4045013+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2022-11-17T12:41:57.4108127+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2022-11-17T12:41:57.4209781+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2022-11-17T12:41:57.4296382+05:30 0HMM8DC1H55EJ:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2022-11-17T12:41:57.4296381+05:30 0HMM8DC1H55EI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2022-11-17T12:41:57.5134028+05:30 0HMM8DC1H55EJ:00000001 [INF] Request finished in 71.6483ms 200  (791a596a)
+2022-11-17T12:41:57.5748288+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2022-11-17T12:41:57.8276932+05:30 0HMM8DC1H55EI:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2022-11-17T12:41:57.8390528+05:30 0HMM8DC1H55EI:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-11-17T12:41:57.8537300+05:30 0HMM8DC1H55EI:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 8.5243ms. (50a9e262)
+2022-11-17T12:41:57.8639611+05:30 0HMM8DC1H55EI:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2022-11-17T12:41:57.8759728+05:30 0HMM8DC1H55EI:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 41.4508ms (afa2e885)
+2022-11-17T12:41:57.8942203+05:30 0HMM8DC1H55EI:00000001 [INF] Request finished in 462.4433ms 200 text/plain; charset=utf-8 (791a596a)
+2022-11-17T12:41:57.9887954+05:30 0HMM8DC1H55EJ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/favicon.ico   (ca22a1cb)
+2022-11-17T12:41:58.0390630+05:30 0HMM8DC1H55EJ:00000002 [INF] Request finished in 49.5909ms 404  (791a596a)
+2022-11-17T12:42:25.0199941+05:30 0HMM8DC1H55EI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Message/GetDoctorChatList?UserId=5   (ca22a1cb)
+2022-11-17T12:42:25.0320878+05:30 0HMM8DC1H55EI:00000002 [INF] Route matched with "{action = \"GetDoctorChatList\", controller = \"Message\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult GetDoctorChatList(Int32)" on controller "MyClickDoctorBE.Controllers.MessageController" ("MyClickDoctorBE"). (122b2fdf)
+2022-11-17T12:42:25.2190084+05:30 0HMM8DC1H55EI:00000002 [INF] Executing action method "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-11-17T12:42:25.6090996+05:30 0HMM8DC1H55EI:00000002 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2022-11-17T12:42:25.6593538+05:30 0HMM8DC1H55EI:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-11-17T12:42:25.7381679+05:30 0HMM8DC1H55EI:00000002 [WRN] The LINQ expression '"where ([a].UserId == GetRecieverId([r].RecieverId, __UserId_5, [r].SenderId))"' could not be translated and will be evaluated locally. (011792c6)
+2022-11-17T12:42:25.7450146+05:30 0HMM8DC1H55EI:00000002 [WRN] The LINQ expression '"FirstOrDefault()"' could not be translated and will be evaluated locally. (011792c6)
+2022-11-17T12:42:25.7501383+05:30 0HMM8DC1H55EI:00000002 [WRN] The LINQ expression '"where ([a].UserId == GetRecieverId([r].RecieverId, __UserId_5, [r].SenderId))"' could not be translated and will be evaluated locally. (011792c6)
+2022-11-17T12:42:25.7523269+05:30 0HMM8DC1H55EI:00000002 [WRN] The LINQ expression '"FirstOrDefault()"' could not be translated and will be evaluated locally. (011792c6)
+2022-11-17T12:42:25.7544538+05:30 0HMM8DC1H55EI:00000002 [WRN] The LINQ expression '"where ([a].UserId == GetRecieverId([r].RecieverId, __UserId_6, [r].SenderId))"' could not be translated and will be evaluated locally. (011792c6)
+2022-11-17T12:42:25.7563728+05:30 0HMM8DC1H55EI:00000002 [WRN] The LINQ expression '"FirstOrDefault()"' could not be translated and will be evaluated locally. (011792c6)
+2022-11-17T12:42:25.7587079+05:30 0HMM8DC1H55EI:00000002 [WRN] The LINQ expression '"where ([a].UserId == GetRecieverId([r].RecieverId, __UserId_6, [r].SenderId))"' could not be translated and will be evaluated locally. (011792c6)
+2022-11-17T12:42:25.7604990+05:30 0HMM8DC1H55EI:00000002 [WRN] The LINQ expression '"FirstOrDefault()"' could not be translated and will be evaluated locally. (011792c6)
+2022-11-17T12:42:25.7626542+05:30 0HMM8DC1H55EI:00000002 [WRN] The LINQ expression '"where ([a].UserId == GetRecieverId([r].RecieverId, __UserId_6, [r].SenderId))"' could not be translated and will be evaluated locally. (011792c6)
+2022-11-17T12:42:25.7657774+05:30 0HMM8DC1H55EI:00000002 [WRN] The LINQ expression '"FirstOrDefault()"' could not be translated and will be evaluated locally. (011792c6)
+2022-11-17T12:42:26.9460987+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("181"ms) [Parameters=["@__UserId_2='?' (DbType = Int32), @__UserId_3='?' (DbType = Int32), @__UserId_4='?' (DbType = Int32), @__UserId_0='?' (DbType = Int32), @__UserId_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id] AS [SenderId0], [r].[SenderId], @__UserId_2, [r].[RecieverId], [r].[SenderUserType], @__UserId_3, [r].[Message] AS [Messages], @__UserId_4, [r].[CreatedAt], [r].[ConnectionId]
+FROM [Chat] AS [r]
+WHERE (((([r].[SenderId] = @__UserId_0) OR ([r].[RecieverId] = @__UserId_1)) AND ([r].[Chattype] = N'chat')) AND [r].[Message] IS NOT NULL) AND (([r].[Message] <> N'') OR [r].[Message] IS NULL)" (0723d8ff)
+2022-11-17T12:42:28.2646021+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("168"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:28.4477540+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:28.8022677+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("169"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:28.9679881+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("164"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:29.3059208+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:29.4729296+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:29.8134362+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:29.9819361+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:30.3273350+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("167"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:30.5028255+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:30.8418917+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:31.0239302+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:31.3647646+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("170"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:31.5390354+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("167"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:31.8890265+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("169"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:32.0599961+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:32.3955233+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:32.5633499+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("164"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:32.9030719+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("169"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:33.0819386+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:33.4279682+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("171"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:33.5941106+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("164"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:33.9363862+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:34.1029679+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:34.4502127+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("167"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:34.6228954+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:34.9649749+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("167"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:35.1397286+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:35.4794498+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:35.6574485+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("168"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:35.9925692+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("164"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:36.1594766+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:36.5027926+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:36.6739913+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:37.0211818+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("175"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:37.1943770+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("167"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:37.5318034+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:37.7033163+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:38.0435488+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:38.2134985+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("167"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:38.5473220+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:38.7167087+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("163"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:39.0561043+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:39.2240981+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:39.5862037+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("167"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:39.7576297+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:40.0976775+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:40.2686402+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:40.6078348+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("168"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:40.7790043+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:41.1195270+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("167"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:41.3204565+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("177"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:41.6623843+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:41.8305352+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("164"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:42.1769352+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("170"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:42.3448401+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:42.6890882+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:42.8561552+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("163"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:43.1923647+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("167"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:43.3753389+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:43.7108806+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:43.8785935+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:44.2247145+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:44.3900878+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("163"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:44.7302315+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:44.8984036+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:45.2333846+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:45.4012044+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:45.7432493+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("167"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:45.9152478+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("170"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:46.2590920+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:46.4269233+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:46.7598939+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:46.9302467+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:47.2692502+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:47.4402317+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:47.7833037+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("169"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:47.9504198+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:48.2837129+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:48.4502249+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:48.7954951+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("177"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:48.9631742+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:49.2986284+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:49.4656219+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:49.8024931+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:49.9704562+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:50.3110063+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("167"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:50.4790033+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:50.8423274+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:51.0283619+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:51.3757215+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("168"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:51.5470968+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:51.8915571+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:52.0645910+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:52.4017815+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[UserId], [a0].[DocCategory]
+FROM [Doctors] AS [a0]" (0723d8ff)
+2022-11-17T12:42:52.5684313+05:30 0HMM8DC1H55EI:00000002 [INF] Executed DbCommand ("165"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a3].[UserId], [a3].[Id]
+FROM [Doctors] AS [a3]" (0723d8ff)
+2022-11-17T12:42:53.9225896+05:30 0HMM8DC1H55EI:00000002 [INF] Executed action method "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 28701.4914ms. (50a9e262)
+2022-11-17T12:42:53.9248909+05:30 0HMM8DC1H55EI:00000002 [INF] Executing ObjectResult, writing value of type '"MyClickDoctorBE.Models.msglist"'. (8a1b66c8)
+2022-11-17T12:42:53.9914980+05:30 0HMM8DC1H55EI:00000002 [INF] Executed action "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatList (MyClickDoctorBE)" in 28956.6135ms (afa2e885)
+2022-11-17T12:42:54.0165441+05:30 0HMM8DC1H55EI:00000002 [INF] Request finished in 28973.8511ms 200 application/json; charset=utf-8 (791a596a)
+2022-11-17T19:03:19.8159206+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2022-11-17T19:03:19.8262350+05:30  [INF] Quartz Scheduler created (389d80b0)
+2022-11-17T19:03:19.8285815+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2022-11-17T19:03:19.8307913+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2022-11-17T19:03:19.8374936+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2022-11-17T19:03:19.8396668+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2022-11-17T19:03:19.8409561+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2022-11-17T19:03:19.9213485+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2022-11-17T19:03:20.0034769+05:30 0HMM8K15AK3D4:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2022-11-17T19:03:20.0034769+05:30 0HMM8K15AK3D5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2022-11-17T19:03:20.0290331+05:30 0HMM8K15AK3D4:00000001 [INF] Request finished in 27.3936ms 200  (791a596a)
+2022-11-17T19:03:20.1998769+05:30 0HMM8K15AK3D5:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2022-11-17T19:03:20.2080856+05:30 0HMM8K15AK3D5:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-11-17T19:03:20.2190674+05:30 0HMM8K15AK3D5:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 6.8674ms. (50a9e262)
+2022-11-17T19:03:20.2266801+05:30 0HMM8K15AK3D5:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2022-11-17T19:03:20.2343059+05:30 0HMM8K15AK3D5:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 30.6156ms (afa2e885)
+2022-11-17T19:03:20.2445608+05:30 0HMM8K15AK3D5:00000001 [INF] Request finished in 240.8302ms 200 text/plain; charset=utf-8 (791a596a)
+2022-11-17T19:03:20.2768348+05:30 0HMM8K15AK3D4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/favicon.ico   (ca22a1cb)
+2022-11-17T19:03:20.3008164+05:30 0HMM8K15AK3D4:00000002 [INF] Request finished in 21.3951ms 404  (791a596a)
+2022-11-17T19:04:43.7845544+05:30 0HMM8K15AK3D6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Message/GetDoctorChatHistory?ConnectionId=5128&UserId=5   (ca22a1cb)
+2022-11-17T19:04:43.8088466+05:30 0HMM8K15AK3D6:00000001 [INF] Route matched with "{action = \"GetDoctorChatHistory\", controller = \"Message\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult GetDoctorChatHistory(System.String, Int32)" on controller "MyClickDoctorBE.Controllers.MessageController" ("MyClickDoctorBE"). (122b2fdf)
+2022-11-17T19:04:43.9360501+05:30 0HMM8K15AK3D6:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatHistory (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-11-17T19:04:44.3123949+05:30 0HMM8K15AK3D6:00000001 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2022-11-17T19:04:44.3497627+05:30 0HMM8K15AK3D6:00000001 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-11-17T19:04:45.5243457+05:30 0HMM8K15AK3D6:00000001 [INF] Executed DbCommand ("176"ms) [Parameters=["@__UserId_1='?' (DbType = Int32), @__ConnectionId_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[SenderId] AS [MyId], [r].[RecieverId] AS [YourId], [r].[Message] AS [Messages], [r].[SenderUserType], [r].[CreatedAt], @__UserId_1
+FROM [Chat] AS [r]
+WHERE ([r].[ConnectionId] = @__ConnectionId_0) AND ([r].[Chattype] = N'chat')" (0723d8ff)
+2022-11-17T19:05:26.8946523+05:30 0HMM8K15AK3D6:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatHistory (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 42956.712ms. (50a9e262)
+2022-11-17T19:05:26.8964581+05:30 0HMM8K15AK3D6:00000001 [INF] Executing ObjectResult, writing value of type '"MyClickDoctorBE.Models.msglist"'. (8a1b66c8)
+2022-11-17T19:05:30.8767392+05:30 0HMM8K15AK3D6:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.MessageController.GetDoctorChatHistory (MyClickDoctorBE)" in 47065.0803ms (afa2e885)
+2022-11-17T19:05:30.8831355+05:30 0HMM8K15AK3D6:00000001 [INF] Request finished in 47099.8105ms 200 application/json; charset=utf-8 (791a596a)

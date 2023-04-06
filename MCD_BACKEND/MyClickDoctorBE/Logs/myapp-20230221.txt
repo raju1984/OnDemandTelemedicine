@@ -1,0 +1,101 @@
+2023-02-21T17:34:09.7364471+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2023-02-21T17:34:09.7625484+05:30  [INF] Quartz Scheduler created (389d80b0)
+2023-02-21T17:34:09.7654450+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2023-02-21T17:34:09.7894896+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2023-02-21T17:34:09.8018632+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2023-02-21T17:34:09.7956528+05:30 0HMOK0EUKURI9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2023-02-21T17:34:09.7956529+05:30 0HMOK0EUKURI8:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2023-02-21T17:34:09.8037827+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2023-02-21T17:34:09.8056694+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2023-02-21T17:34:09.8439501+05:30 0HMOK0EUKURI8:00000001 [INF] Request finished in 54.9956ms 200  (791a596a)
+2023-02-21T17:34:09.9204271+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2023-02-21T17:34:10.1742962+05:30 0HMOK0EUKURI9:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2023-02-21T17:34:10.2213494+05:30 0HMOK0EUKURI9:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2023-02-21T17:34:10.2394040+05:30 0HMOK0EUKURI9:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 11.0086ms. (50a9e262)
+2023-02-21T17:34:10.2843115+05:30 0HMOK0EUKURI9:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2023-02-21T17:34:10.3048258+05:30 0HMOK0EUKURI9:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 116.6747ms (afa2e885)
+2023-02-21T17:34:10.3311191+05:30 0HMOK0EUKURI9:00000001 [INF] Request finished in 528.9961ms 200 text/plain; charset=utf-8 (791a596a)
+2023-02-21T17:34:10.8583866+05:30 0HMOK0EUKURI8:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/favicon.ico   (ca22a1cb)
+2023-02-21T17:34:10.8989256+05:30 0HMOK0EUKURI8:00000002 [INF] Request finished in 36.2337ms 404  (791a596a)
+2023-02-21T17:41:39.2549029+05:30 0HMOK0EUKURIA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Account/GetForgetPaassword application/json 45 (ca22a1cb)
+2023-02-21T17:41:39.2584460+05:30 0HMOK0EUKURIA:00000001 [INF] Request finished in 2.3846ms 404  (791a596a)
+2023-02-21T17:41:39.2732144+05:30  [INF] Connection id ""0HMOK0EUKURIA"", Request id ""0HMOK0EUKURIA:00000001"": the application completed without reading the entire request body. (54ac9468)
+2023-02-21T17:41:46.1639884+05:30 0HMOK0EUKURIA:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44365/api/Account/GetForgetPaassword application/json 45 (ca22a1cb)
+2023-02-21T17:41:46.1781700+05:30 0HMOK0EUKURIA:00000002 [INF] Route matched with "{action = \"GetForgetPaassword\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetForgetPaassword(MyClickDoctorBE.Models.ForgetPass)" on controller "MyClickDoctorBE.Controllers.AccountController" ("MyClickDoctorBE"). (122b2fdf)
+2023-02-21T17:41:46.4462919+05:30 0HMOK0EUKURIA:00000002 [INF] Executing action method "MyClickDoctorBE.Controllers.AccountController.GetForgetPaassword (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2023-02-21T17:41:57.8406369+05:30 0HMOK0EUKURIA:00000002 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2023-02-21T17:41:57.8937395+05:30 0HMOK0EUKURIA:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2023-02-21T17:41:59.1764552+05:30 0HMOK0EUKURIA:00000002 [INF] Executed DbCommand ("177"ms) [Parameters=["@__obj_Email_0='?' (Size = 256) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[BussinessStatus], [a].[CreatedAt], [a].[DeletedAt], [a].[DeletedBy], [a].[Email], [a].[EmailAuth], [a].[EmailOTP], [a].[EmailUpdatedAt], [a].[Isemail], [a].[LastMeeting], [a].[Lastlogin], [a].[MobileOTP], [a].[PhoneNo], [a].[SMSAuth], [a].[Status], [a].[Token], [a].[Unscubscribe], [a].[UpdatedAt], [a].[UpdatedBy], [a].[UserPassword], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[Email] = @__obj_Email_0) AND ([a].[Status] = 1)" (0723d8ff)
+2023-02-21T17:42:03.2679726+05:30 0HMOK0EUKURIA:00000002 [INF] Executed DbCommand ("174"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[AllowPatient], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[IsValidated], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MaxCallCount], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[Project], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2023-02-21T17:42:13.9857052+05:30 0HMOK0EUKURIA:00000002 [INF] Executed action method "MyClickDoctorBE.Controllers.AccountController.GetForgetPaassword (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 27535.7892ms. (50a9e262)
+2023-02-21T17:42:13.9885121+05:30 0HMOK0EUKURIA:00000002 [INF] Executing ObjectResult, writing value of type '"MyClickDoctorBE.Models.ApiResponse"'. (8a1b66c8)
+2023-02-21T17:42:14.0027475+05:30 0HMOK0EUKURIA:00000002 [INF] Executed action "MyClickDoctorBE.Controllers.AccountController.GetForgetPaassword (MyClickDoctorBE)" in 27820.1566ms (afa2e885)
+2023-02-21T17:42:14.0050586+05:30 0HMOK0EUKURIA:00000002 [INF] Request finished in 27841.4848ms 200 application/json; charset=utf-8 (791a596a)
+2023-02-21T17:42:18.3622742+05:30 0HMOK0EUKURIA:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44365/api/Account/GetForgetPaassword application/json 45 (ca22a1cb)
+2023-02-21T17:42:18.3640300+05:30 0HMOK0EUKURIA:00000003 [INF] Route matched with "{action = \"GetForgetPaassword\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetForgetPaassword(MyClickDoctorBE.Models.ForgetPass)" on controller "MyClickDoctorBE.Controllers.AccountController" ("MyClickDoctorBE"). (122b2fdf)
+2023-02-21T17:42:18.3672987+05:30 0HMOK0EUKURIA:00000003 [INF] Executing action method "MyClickDoctorBE.Controllers.AccountController.GetForgetPaassword (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2023-02-21T17:42:21.9240770+05:30 0HMOK0EUKURIA:00000003 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2023-02-21T17:42:22.1175283+05:30 0HMOK0EUKURIA:00000003 [INF] Executed DbCommand ("173"ms) [Parameters=["@__obj_Email_0='?' (Size = 256) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[BussinessStatus], [a].[CreatedAt], [a].[DeletedAt], [a].[DeletedBy], [a].[Email], [a].[EmailAuth], [a].[EmailOTP], [a].[EmailUpdatedAt], [a].[Isemail], [a].[LastMeeting], [a].[Lastlogin], [a].[MobileOTP], [a].[PhoneNo], [a].[SMSAuth], [a].[Status], [a].[Token], [a].[Unscubscribe], [a].[UpdatedAt], [a].[UpdatedBy], [a].[UserPassword], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[Email] = @__obj_Email_0) AND ([a].[Status] = 1)" (0723d8ff)
+2023-02-21T17:42:25.4328460+05:30 0HMOK0EUKURIA:00000003 [INF] Executed DbCommand ("175"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[AllowPatient], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[IsValidated], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MaxCallCount], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[Project], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2023-02-21T19:18:15.5111739+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2023-02-21T19:18:15.5225802+05:30  [INF] Quartz Scheduler created (389d80b0)
+2023-02-21T19:18:15.5331392+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2023-02-21T19:18:15.5396580+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2023-02-21T19:18:15.5487996+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2023-02-21T19:18:15.5514909+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2023-02-21T19:18:15.5540112+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2023-02-21T19:18:15.5613435+05:30 0HMOK2941H6I0:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2023-02-21T19:18:15.5613437+05:30 0HMOK2941H6HV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2023-02-21T19:18:15.6036157+05:30 0HMOK2941H6I0:00000001 [INF] Request finished in 40.066ms 200  (791a596a)
+2023-02-21T19:18:15.6720770+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2023-02-21T19:18:15.7590434+05:30 0HMOK2941H6HV:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2023-02-21T19:18:15.7670173+05:30 0HMOK2941H6HV:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2023-02-21T19:18:15.7779316+05:30 0HMOK2941H6HV:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 6.9738ms. (50a9e262)
+2023-02-21T19:18:15.7845679+05:30 0HMOK2941H6HV:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2023-02-21T19:18:15.7926710+05:30 0HMOK2941H6HV:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 29.6089ms (afa2e885)
+2023-02-21T19:18:15.8001058+05:30 0HMOK2941H6HV:00000001 [INF] Request finished in 241.7532ms 200 text/plain; charset=utf-8 (791a596a)
+2023-02-21T19:18:15.8395484+05:30 0HMOK2941H6I0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/favicon.ico   (ca22a1cb)
+2023-02-21T19:18:15.8617542+05:30 0HMOK2941H6I0:00000002 [INF] Request finished in 22.104ms 404  (791a596a)
+2023-02-21T19:18:20.8086352+05:30 0HMOK2941H6HV:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44365/api/Account/GetForgetPaassword application/json 45 (ca22a1cb)
+2023-02-21T19:18:20.8202518+05:30 0HMOK2941H6HV:00000002 [INF] Route matched with "{action = \"GetForgetPaassword\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetForgetPaassword(MyClickDoctorBE.Models.ForgetPass)" on controller "MyClickDoctorBE.Controllers.AccountController" ("MyClickDoctorBE"). (122b2fdf)
+2023-02-21T19:18:21.0048097+05:30 0HMOK2941H6HV:00000002 [INF] Executing action method "MyClickDoctorBE.Controllers.AccountController.GetForgetPaassword (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2023-02-21T19:18:26.4203250+05:30 0HMOK2941H6HV:00000002 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2023-02-21T19:18:26.4718249+05:30 0HMOK2941H6HV:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2023-02-21T19:18:27.7801625+05:30 0HMOK2941H6HV:00000002 [INF] Executed DbCommand ("188"ms) [Parameters=["@__obj_Email_0='?' (Size = 256) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[BussinessStatus], [a].[CreatedAt], [a].[DeletedAt], [a].[DeletedBy], [a].[Email], [a].[EmailAuth], [a].[EmailOTP], [a].[EmailUpdatedAt], [a].[Isemail], [a].[LastMeeting], [a].[Lastlogin], [a].[MobileOTP], [a].[PhoneNo], [a].[SMSAuth], [a].[Status], [a].[Token], [a].[Unscubscribe], [a].[UpdatedAt], [a].[UpdatedBy], [a].[UserPassword], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[Email] = @__obj_Email_0) AND ([a].[Status] = 1)" (0723d8ff)
+2023-02-21T19:18:31.9269299+05:30 0HMOK2941H6HV:00000002 [INF] Executed DbCommand ("188"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AboutMe], [a].[AddressLine], [a].[AddressLine2], [a].[Agreement], [a].[AllowPatient], [a].[City], [a].[ContarctEndDate], [a].[ContractStartDate], [a].[ContractualDoctorsCompany], [a].[Country], [a].[CountryCode], [a].[DOB], [a].[DocCategory], [a].[DoctorConslutationCount], [a].[DoctorConsultation], [a].[DoctorType], [a].[FirstName], [a].[Gander], [a].[IsValidated], [a].[Latitude], [a].[Longitude], [a].[MSHCID], [a].[MaxCallCount], [a].[MedicalRegistrationNo], [a].[PhoneNo], [a].[PhotoURL], [a].[PriceId], [a].[Project], [a].[RegistrationNo], [a].[SecondName], [a].[ShortIntroduction], [a].[State], [a].[Status], [a].[StreetNumber], [a].[UserId], [a].[Year], [a].[YearsOfExperiecne], [a].[Zipcode]
+FROM [Doctors] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2023-02-21T19:18:58.5673776+05:30 0HMOK2941H6HV:00000002 [INF] Executed action method "MyClickDoctorBE.Controllers.AccountController.GetForgetPaassword (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 37560.1608ms. (50a9e262)
+2023-02-21T19:18:58.5694751+05:30 0HMOK2941H6HV:00000002 [INF] Executing ObjectResult, writing value of type '"MyClickDoctorBE.Models.ApiResponse"'. (8a1b66c8)
+2023-02-21T19:18:58.5796270+05:30 0HMOK2941H6HV:00000002 [INF] Executed action "MyClickDoctorBE.Controllers.AccountController.GetForgetPaassword (MyClickDoctorBE)" in 37757.8703ms (afa2e885)
+2023-02-21T19:18:58.5818762+05:30 0HMOK2941H6HV:00000002 [INF] Request finished in 37773.1986ms 200 application/json; charset=utf-8 (791a596a)

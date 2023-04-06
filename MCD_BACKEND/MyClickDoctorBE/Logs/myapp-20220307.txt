@@ -1,0 +1,114 @@
+2022-03-07T20:29:33.0204018+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2022-03-07T20:29:33.0681778+05:30  [INF] Quartz Scheduler created (389d80b0)
+2022-03-07T20:29:33.1232616+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2022-03-07T20:29:33.1287944+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2022-03-07T20:29:33.1408401+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2022-03-07T20:29:33.1432495+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2022-03-07T20:29:33.1470022+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2022-03-07T20:29:33.1959391+05:30 0HMG09CBBM6I1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2022-03-07T20:29:33.1959391+05:30 0HMG09CBBM6I0:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2022-03-07T20:29:33.2599534+05:30 0HMG09CBBM6I0:00000001 [INF] Request finished in 70.5709ms 200  (791a596a)
+2022-03-07T20:29:33.3098316+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2022-03-07T20:29:33.5115318+05:30 0HMG09CBBM6I1:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2022-03-07T20:29:33.5319307+05:30 0HMG09CBBM6I1:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-03-07T20:29:33.5472243+05:30 0HMG09CBBM6I1:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 9.5164ms. (50a9e262)
+2022-03-07T20:29:33.5582552+05:30 0HMG09CBBM6I1:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2022-03-07T20:29:33.5675277+05:30 0HMG09CBBM6I1:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 51.0566ms (afa2e885)
+2022-03-07T20:29:33.6028741+05:30 0HMG09CBBM6I1:00000001 [INF] Request finished in 413.0414ms 200 text/plain; charset=utf-8 (791a596a)
+2022-03-07T20:29:33.6377086+05:30 0HMG09CBBM6I0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/favicon.ico   (ca22a1cb)
+2022-03-07T20:29:33.6724265+05:30 0HMG09CBBM6I0:00000002 [INF] Request finished in 41.7813ms 404  (791a596a)
+2022-03-07T20:29:40.0993575+05:30 0HMG09CBBM6I1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Email/GetAppointmentFifteenMinEmail   (ca22a1cb)
+2022-03-07T20:29:40.1093781+05:30 0HMG09CBBM6I1:00000002 [INF] Route matched with "{action = \"GetAppointmentFifteenMinEmail\", controller = \"Email\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAppointmentFifteenMinEmail()" on controller "MyClickDoctorBE.Controllers.EmailController" ("MyClickDoctorBE"). (122b2fdf)
+2022-03-07T20:29:40.2801193+05:30 0HMG09CBBM6I1:00000002 [INF] Executing action method "MyClickDoctorBE.Controllers.EmailController.GetAppointmentFifteenMinEmail (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-03-07T20:29:53.4563431+05:30 0HMG09CBBM6I1:00000002 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2022-03-07T20:29:53.5024778+05:30 0HMG09CBBM6I1:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-07T20:29:53.5255425+05:30 0HMG09CBBM6I1:00000002 [WRN] Query: '"(from PharmaMaxConsultationCount <generated>_1 in DbSet<PharmaMaxConsultationCount> select [<generat..."' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results. (6af4db4b)
+2022-03-07T20:29:54.8543715+05:30 0HMG09CBBM6I1:00000002 [INF] Executed DbCommand ("207"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[CallCount], [p].[ConsulationCount], [p].[Fifteenmin], [p].[Onehour], [p].[RefCount], [p].[Twentyfourhour]
+FROM [PharmaMaxConsultationCount] AS [p]" (0723d8ff)
+2022-03-07T20:30:00.7697038+05:30 0HMG09CBBM6I1:00000002 [INF] Executed DbCommand ("191"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Appoinmentcode], [a].[AppointmentTitle], [a].[BeforeCall], [a].[BookingDate], [a].[CallQualityFeedbackDoctor], [a].[CallQualityFeedbackPatient], [a].[CancelBy], [a].[CompanyId], [a].[Description], [a].[docId], [a].[DocSlotId], [a].[DoctorAdviseAfterConsultation], [a].[DoctorCancelStatus], [a].[DoctorConsultationId], [a].[DoctorId], [a].[DoctorPopup], [a].[DoctortoPopup], [a].[Duration], [a].[EndCall], [a].[EndDate], [a].[IsActive], [a].[IsDoctorShowedUp], [a].[IsNextConsultationAdvise], [a].[LastVisitedDate], [a].[MyRole], [a].[NextConsultationDate], [a].[NurseFeedbackAboutDoctor], [a].[NurseId], [a].[NursePopup], [a].[NurseSlotId], [a].[NurseStartDate], [a].[NurseSuggestionStatus], [a].[PatientAamnesticData], [a].[PatientId], [a].[PatientPopup], [a].[PharmaPopup], [a].[PharmaRepId], [a].[RatingGivenByPatient], [a].[ShortSummaryWrittenByPatient], [a].[StartDate], [a].[TimeZone], [a].[UserRole], [a].[VideoCallKey]
+FROM [Appoinments] AS [a]
+WHERE DATEADD(minute, -15E0, [a].[StartDate]) = GETUTCDATE()" (0723d8ff)
+2022-03-07T20:30:26.1544386+05:30 0HMG09CBBM6I1:00000002 [INF] Executed action method "MyClickDoctorBE.Controllers.EmailController.GetAppointmentFifteenMinEmail (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 45876.7673ms. (50a9e262)
+2022-03-07T20:30:26.1572410+05:30 0HMG09CBBM6I1:00000002 [INF] Executing ObjectResult, writing value of type '"System.Int32"'. (8a1b66c8)
+2022-03-07T20:30:26.2098760+05:30 0HMG09CBBM6I1:00000002 [INF] Executed action "MyClickDoctorBE.Controllers.EmailController.GetAppointmentFifteenMinEmail (MyClickDoctorBE)" in 46102.6388ms (afa2e885)
+2022-03-07T20:30:26.2181541+05:30 0HMG09CBBM6I1:00000002 [INF] Request finished in 46117.187ms 200 application/json; charset=utf-8 (791a596a)
+2022-03-07T20:32:02.4210871+05:30 0HMG09CBBM6I2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Email/GetAppointmentFifteenMinEmail   (ca22a1cb)
+2022-03-07T20:32:02.4231823+05:30 0HMG09CBBM6I2:00000001 [INF] Route matched with "{action = \"GetAppointmentFifteenMinEmail\", controller = \"Email\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAppointmentFifteenMinEmail()" on controller "MyClickDoctorBE.Controllers.EmailController" ("MyClickDoctorBE"). (122b2fdf)
+2022-03-07T20:32:02.4254588+05:30 0HMG09CBBM6I2:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.EmailController.GetAppointmentFifteenMinEmail (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-03-07T20:32:04.4430271+05:30 0HMG09CBBM6I2:00000001 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-07T20:32:04.6387769+05:30 0HMG09CBBM6I2:00000001 [INF] Executed DbCommand ("192"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[CallCount], [p].[ConsulationCount], [p].[Fifteenmin], [p].[Onehour], [p].[RefCount], [p].[Twentyfourhour]
+FROM [PharmaMaxConsultationCount] AS [p]" (0723d8ff)
+2022-03-07T20:32:07.6454016+05:30 0HMG09CBBM6I2:00000001 [INF] Executed DbCommand ("195"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Appoinmentcode], [a].[AppointmentTitle], [a].[BeforeCall], [a].[BookingDate], [a].[CallQualityFeedbackDoctor], [a].[CallQualityFeedbackPatient], [a].[CancelBy], [a].[CompanyId], [a].[Description], [a].[docId], [a].[DocSlotId], [a].[DoctorAdviseAfterConsultation], [a].[DoctorCancelStatus], [a].[DoctorConsultationId], [a].[DoctorId], [a].[DoctorPopup], [a].[DoctortoPopup], [a].[Duration], [a].[EndCall], [a].[EndDate], [a].[IsActive], [a].[IsDoctorShowedUp], [a].[IsNextConsultationAdvise], [a].[LastVisitedDate], [a].[MyRole], [a].[NextConsultationDate], [a].[NurseFeedbackAboutDoctor], [a].[NurseId], [a].[NursePopup], [a].[NurseSlotId], [a].[NurseStartDate], [a].[NurseSuggestionStatus], [a].[PatientAamnesticData], [a].[PatientId], [a].[PatientPopup], [a].[PharmaPopup], [a].[PharmaRepId], [a].[RatingGivenByPatient], [a].[ShortSummaryWrittenByPatient], [a].[StartDate], [a].[TimeZone], [a].[UserRole], [a].[VideoCallKey]
+FROM [Appoinments] AS [a]
+WHERE DATEADD(minute, -15E0, [a].[StartDate]) = GETUTCDATE()" (0723d8ff)
+2022-03-07T20:32:15.1076473+05:30 0HMG09CBBM6I2:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.EmailController.GetAppointmentFifteenMinEmail (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 12681.5476ms. (50a9e262)
+2022-03-07T20:32:15.1100382+05:30 0HMG09CBBM6I2:00000001 [INF] Executing ObjectResult, writing value of type '"System.Int32"'. (8a1b66c8)
+2022-03-07T20:32:15.1125120+05:30 0HMG09CBBM6I2:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.EmailController.GetAppointmentFifteenMinEmail (MyClickDoctorBE)" in 12688.3578ms (afa2e885)
+2022-03-07T20:32:15.1150553+05:30 0HMG09CBBM6I2:00000001 [INF] Request finished in 12694.2205ms 200 application/json; charset=utf-8 (791a596a)
+2022-03-07T20:34:14.9156219+05:30 0HMG09CBBM6I3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Email/GetAppointmentFifteenMinEmail   (ca22a1cb)
+2022-03-07T20:34:14.9172039+05:30 0HMG09CBBM6I3:00000001 [INF] Route matched with "{action = \"GetAppointmentFifteenMinEmail\", controller = \"Email\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAppointmentFifteenMinEmail()" on controller "MyClickDoctorBE.Controllers.EmailController" ("MyClickDoctorBE"). (122b2fdf)
+2022-03-07T20:34:14.9189906+05:30 0HMG09CBBM6I3:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.EmailController.GetAppointmentFifteenMinEmail (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-03-07T20:34:16.3843061+05:30 0HMG09CBBM6I3:00000001 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-07T20:34:16.5765581+05:30 0HMG09CBBM6I3:00000001 [INF] Executed DbCommand ("190"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[CallCount], [p].[ConsulationCount], [p].[Fifteenmin], [p].[Onehour], [p].[RefCount], [p].[Twentyfourhour]
+FROM [PharmaMaxConsultationCount] AS [p]" (0723d8ff)
+2022-03-07T20:34:18.1286887+05:30 0HMG09CBBM6I3:00000001 [INF] Executed DbCommand ("191"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Appoinmentcode], [a].[AppointmentTitle], [a].[BeforeCall], [a].[BookingDate], [a].[CallQualityFeedbackDoctor], [a].[CallQualityFeedbackPatient], [a].[CancelBy], [a].[CompanyId], [a].[Description], [a].[docId], [a].[DocSlotId], [a].[DoctorAdviseAfterConsultation], [a].[DoctorCancelStatus], [a].[DoctorConsultationId], [a].[DoctorId], [a].[DoctorPopup], [a].[DoctortoPopup], [a].[Duration], [a].[EndCall], [a].[EndDate], [a].[IsActive], [a].[IsDoctorShowedUp], [a].[IsNextConsultationAdvise], [a].[LastVisitedDate], [a].[MyRole], [a].[NextConsultationDate], [a].[NurseFeedbackAboutDoctor], [a].[NurseId], [a].[NursePopup], [a].[NurseSlotId], [a].[NurseStartDate], [a].[NurseSuggestionStatus], [a].[PatientAamnesticData], [a].[PatientId], [a].[PatientPopup], [a].[PharmaPopup], [a].[PharmaRepId], [a].[RatingGivenByPatient], [a].[ShortSummaryWrittenByPatient], [a].[StartDate], [a].[TimeZone], [a].[UserRole], [a].[VideoCallKey]
+FROM [Appoinments] AS [a]
+WHERE DATEADD(minute, -15E0, [a].[StartDate]) = GETUTCDATE()" (0723d8ff)
+2022-03-07T20:34:46.4422272+05:30 0HMG09CBBM6I3:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.EmailController.GetAppointmentFifteenMinEmail (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 31524.0791ms. (50a9e262)
+2022-03-07T20:34:46.4439386+05:30 0HMG09CBBM6I3:00000001 [INF] Executing ObjectResult, writing value of type '"System.Int32"'. (8a1b66c8)
+2022-03-07T20:34:46.4464564+05:30 0HMG09CBBM6I3:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.EmailController.GetAppointmentFifteenMinEmail (MyClickDoctorBE)" in 31529.8076ms (afa2e885)
+2022-03-07T20:34:46.4490236+05:30 0HMG09CBBM6I3:00000001 [INF] Request finished in 31537.8591ms 200 application/json; charset=utf-8 (791a596a)
+2022-03-07T20:41:38.5791081+05:30  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2022-03-07T20:41:38.5884930+05:30  [INF] Quartz Scheduler created (389d80b0)
+2022-03-07T20:41:38.5913774+05:30  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2022-03-07T20:41:38.5995957+05:30  [INF] RAMJobStore initialized. (8c5a21db)
+2022-03-07T20:41:38.6048969+05:30  [INF] Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ (22c79d54)
+2022-03-07T20:41:38.6095436+05:30  [INF] Quartz scheduler 'QuartzScheduler' initialized (c1398267)
+2022-03-07T20:41:38.6119430+05:30  [INF] Quartz scheduler version: 3.3.3.0 (17343806)
+2022-03-07T20:41:38.6475086+05:30 0HMG09J3IPK0C:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65099/  0 (ca22a1cb)
+2022-03-07T20:41:38.6475052+05:30 0HMG09J3IPK0B:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/values   (ca22a1cb)
+2022-03-07T20:41:38.6742754+05:30 0HMG09J3IPK0C:00000001 [INF] Request finished in 28.819ms 200  (791a596a)
+2022-03-07T20:41:38.7380967+05:30  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2022-03-07T20:41:38.8695205+05:30 0HMG09J3IPK0B:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "MyClickDoctorBE.Controllers.ValuesController" ("MyClickDoctorBE"). (122b2fdf)
+2022-03-07T20:41:38.8785891+05:30 0HMG09J3IPK0B:00000001 [INF] Executing action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-03-07T20:41:38.8903279+05:30 0HMG09J3IPK0B:00000001 [INF] Executed action method "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 7.005ms. (50a9e262)
+2022-03-07T20:41:38.8978698+05:30 0HMG09J3IPK0B:00000001 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2022-03-07T20:41:38.9058412+05:30 0HMG09J3IPK0B:00000001 [INF] Executed action "MyClickDoctorBE.Controllers.ValuesController.Get (MyClickDoctorBE)" in 31.946ms (afa2e885)
+2022-03-07T20:41:38.9222396+05:30 0HMG09J3IPK0B:00000001 [INF] Request finished in 271.6047ms 200 text/plain; charset=utf-8 (791a596a)
+2022-03-07T20:41:45.7168173+05:30 0HMG09J3IPK0C:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44365/api/Email/GetAppointmentFifteenMinEmail   (ca22a1cb)
+2022-03-07T20:41:45.7235708+05:30 0HMG09J3IPK0C:00000002 [INF] Route matched with "{action = \"GetAppointmentFifteenMinEmail\", controller = \"Email\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAppointmentFifteenMinEmail()" on controller "MyClickDoctorBE.Controllers.EmailController" ("MyClickDoctorBE"). (122b2fdf)
+2022-03-07T20:41:45.8420746+05:30 0HMG09J3IPK0C:00000002 [INF] Executing action method "MyClickDoctorBE.Controllers.EmailController.GetAppointmentFifteenMinEmail (MyClickDoctorBE)" - Validation state: Valid (dad538d7)
+2022-03-07T20:41:49.1734260+05:30 0HMG09J3IPK0C:00000002 [WRN] No type was specified for the decimal column '"AppointmentRate"' on entity type '"PriceListMaster"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2022-03-07T20:41:49.2095116+05:30 0HMG09J3IPK0C:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"MyClickDoctorV4"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-07T20:41:49.2318093+05:30 0HMG09J3IPK0C:00000002 [WRN] Query: '"(from PharmaMaxConsultationCount <generated>_1 in DbSet<PharmaMaxConsultationCount> select [<generat..."' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results. (6af4db4b)
+2022-03-07T20:41:50.2248979+05:30 0HMG09J3IPK0C:00000002 [INF] Executed DbCommand ("156"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[CallCount], [p].[ConsulationCount], [p].[Fifteenmin], [p].[Onehour], [p].[RefCount], [p].[Twentyfourhour]
+FROM [PharmaMaxConsultationCount] AS [p]" (0723d8ff)
+2022-03-07T20:43:08.3905259+05:30 0HMG09J3IPK0C:00000002 [INF] Executed DbCommand ("146"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Appoinmentcode], [a].[AppointmentTitle], [a].[BeforeCall], [a].[BookingDate], [a].[CallQualityFeedbackDoctor], [a].[CallQualityFeedbackPatient], [a].[CancelBy], [a].[CompanyId], [a].[Description], [a].[docId], [a].[DocSlotId], [a].[DoctorAdviseAfterConsultation], [a].[DoctorCancelStatus], [a].[DoctorConsultationId], [a].[DoctorId], [a].[DoctorPopup], [a].[DoctortoPopup], [a].[Duration], [a].[EndCall], [a].[EndDate], [a].[IsActive], [a].[IsDoctorShowedUp], [a].[IsNextConsultationAdvise], [a].[LastVisitedDate], [a].[MyRole], [a].[NextConsultationDate], [a].[NurseFeedbackAboutDoctor], [a].[NurseId], [a].[NursePopup], [a].[NurseSlotId], [a].[NurseStartDate], [a].[NurseSuggestionStatus], [a].[PatientAamnesticData], [a].[PatientId], [a].[PatientPopup], [a].[PharmaPopup], [a].[PharmaRepId], [a].[RatingGivenByPatient], [a].[ShortSummaryWrittenByPatient], [a].[StartDate], [a].[TimeZone], [a].[UserRole], [a].[VideoCallKey]
+FROM [Appoinments] AS [a]
+WHERE DATEADD(minute, -15E0, [a].[StartDate]) = GETUTCDATE()" (0723d8ff)
+2022-03-07T20:43:08.4222095+05:30 0HMG09J3IPK0C:00000002 [INF] Executed action method "MyClickDoctorBE.Controllers.EmailController.GetAppointmentFifteenMinEmail (MyClickDoctorBE)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 82581.4406ms. (50a9e262)
+2022-03-07T20:43:08.4246838+05:30 0HMG09J3IPK0C:00000002 [INF] Executing ObjectResult, writing value of type '"System.Int32"'. (8a1b66c8)
+2022-03-07T20:43:08.4656235+05:30 0HMG09J3IPK0C:00000002 [INF] Executed action "MyClickDoctorBE.Controllers.EmailController.GetAppointmentFifteenMinEmail (MyClickDoctorBE)" in 82743.0477ms (afa2e885)
+2022-03-07T20:43:08.4713663+05:30 0HMG09J3IPK0C:00000002 [INF] Request finished in 82754.7391ms 200 application/json; charset=utf-8 (791a596a)

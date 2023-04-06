@@ -1,0 +1,170 @@
+﻿@using MyClickDoctorBE.Models
+@model MyClickDoctorBE.Models.EmailCampaignModel
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body style="background: #eff7f8; padding:0px; margin:0px;font-family: Trebuchet MS sans-serif; height: 100vh;">
+
+    <style type="text/css">
+        p b {
+            color: #000;
+        }
+
+        .table-box p {
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+            font-size: 13px;
+            line-height: 18px;
+            margin-bottom: 6px;
+            color: #545454;
+        }
+
+
+        .unsubscribe {
+            text-align: center;
+            background: #ff2525;
+            color: #FFF;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: block;
+            padding: 15px;
+            border-radius: 4px;
+            letter-spacing: 1px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .appointment {
+            display: block;
+            text-align: center;
+            background: #2d3663;
+            padding: 10px 0px;
+            border-radius: 4px;
+            color: #FFF;
+            text-decoration: none;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+
+    <table style="width: 600px;margin: auto; background:#FFF; padding:0.5em 1em;height: 100%;box-shadow: #3333331c 0px 5px 10px;">
+        <tbody>
+            <tr>
+
+                <td>
+                    <table style="width: 100%;border-spacing: 10px;">
+                        <tbody>
+                            <tr>
+                                <td><img src="@Model.ApiPath/TempImages/myclickdoctor_new_HUN.png" width="100"></td>
+                                <td width="120">
+                                    <p>Helpdesk <br /><b style="font-size: 16px;">+36 1 336 21 04</b></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="border-top: 1px solid #b9b9b9;">
+                    <table style="width: 100%; border-spacing: 10px;">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h3 style="margin-block-start: .67em;margin-block-end: .67em;">Kedves <b>@Model.Name!</b></h3>
+                                    <p>Nagy örömünkre szolgál, hogy egyre több új konzultációs időpont jött létre myclickdoctor rendszerünkben. Erről szeretnénk pontos tájékoztatást adni. </p>
+                                    <p style="margin-top: 20px;">A jelenleg elérhető konzultációs idősávok és szakemberek:<p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <table class="table-box" style="width: 100%; padding: 0 10px;border-spacing: 0px;">
+                        <tbody>
+                            @if (Model.Doclist != null)
+                            {
+                                foreach (var item in Model.Doclist)
+                                {
+                <tr style="padding: 11px;box-shadow: #3333334a 0px 0px 10px;">
+                    <td width="100px" style="border: 1px solid #c1c1c1;">
+                        @if (item.PhotoUrl != null || !string.IsNullOrEmpty(item.PhotoUrl))
+                        {
+    <img src="@Model.ApiPath@item.PhotoUrl" onerror="this.onerror=null;this.src='@Model.Errorpath';" width="100%"> }
+else
+{
+<img src="@Model.Errorpath" width="100%">}
+
+                    </td>
+                    <td style="padding:10px 15px; border: 1px solid #c1c1c1;border-left: 0px;">
+                        <h3 style="margin-block-start: 0.1em;margin-block-end: 0.5em;">@item.FirstName</h3>
+                        <p>
+                            <b>Szakterület</b> -
+                            @if (item.Expert != null)
+                            {
+                                string specilty = "";
+                                foreach (var img in item.Expert)
+                                {
+                                    if (specilty == "")
+                                    {
+                                        specilty = img.HungName;
+                                    }
+                                    else
+                                    {
+                                        specilty = specilty + ", " + img.HungName;
+                                    }
+                                }
+        @specilty}
+                        </p>
+                        <p><b>Dátum </b> - @item.Date</p>
+                        <p><b>Időtartam </b> - @item.Duration perc</p>
+                        <a class="appointment" href="https://test.myclickdoctor.com/layout/doctor/doctor-Booking">Foglaljon időpontot</a>
+                    </td>
+                </tr>
+                                    <tr><td><br /></td></tr>
+}
+                            }
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <table style="width: 100%; border-spacing: 10px;">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h5 style="margin-block-start: 1.67em;margin-block-end: .67em;"><b>Szakértőink szeretettel várják Önt is!</b></h5>
+                                    <h5 style="margin-block-start: .67em;margin-block-end: .67em;">Üdvözlettel,<br />dr. Blasszauer Celia és a MedicalScan csapata<h5>
+                                </td>
+                                <td><img src="@Model.ApiPath/TempImages/myclickdoctor_new_HUN.png" width="100"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="border-top: 1px solid #b9b9b9;">
+                    <table style="width: 100%; border-spacing: 10px;">
+                        <tr>
+                            <td style="text-align: center;">
+                                @*<h5 style="margin-block-start: .67em; text-align: left;">Amennyiben a jövőben nem kíván értésítést kapni legújabb konzultációs lehetőségeinkről, az alábbi linkre kattintva tud leiratkozni:</h5>*@
+                                @*<a class="unsubscribe" target="_blank" href="https://test.myclickdoctor.com/un-subscribe?UserId=@Model.UserId">unsubscribe</a>*@
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>

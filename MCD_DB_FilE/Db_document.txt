@@ -1,0 +1,8 @@
+Doctor  credentials 
+
+fahad@mailinator.com
+123456
+
+Patient credentials 
+iyer@mailinator.com	
+123456
